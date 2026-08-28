@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}ILEC Interface{% endblock %}</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/lux/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Your overrides -->
+  <link rel="stylesheet" href="/static/style.css" />  
+  {% block head %}{% endblock %}  
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+    <div class="container-fluid">
+      <img src="/img/logo.png" style="height: 70px;">&nbsp; 
+      <a class="navbar-brand" href="/">MMA<small style="font-size: x-small;">gent</small></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+              aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">        
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/agent"><i class="fa-solid fa-gear"></i> Agent</a></li>
+          <li class="nav-item"><a class="nav-link" href="/data"><i class="fa-solid fa-database"></i> query editor</a></li>            
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main-content" style="padding: 0px 20px 0px 10px;">
+    <main class="container-fluid">
+        {% block content %}{% endblock %}
+    </main>
+  </div>
+  
+
+  <footer class="text-left text-muted py-4" style="padding-left: 50px;">
+    <small>© {{ 2025 }} Mike McPhee Anderson</small>
+  </footer>
+
+  {% block scripts %}{% endblock %}
+</body>
+</html>
