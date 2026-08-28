@@ -1,0 +1,29 @@
+# Normalise text by default, but never let Git touch binary payloads.
+#
+# This file is not boilerplate: an earlier project in this line of work had a
+# large binary artifact silently corrupted by line-ending translation after a
+# blanket `git add`. Declaring binaries explicitly prevents a repeat, and matters
+# here because the committed parquet fixture and the seven published PNGs are the
+# evidence behind the paper.
+
+* text=auto
+
+# Notebooks: text, but always LF so diffs stay readable across platforms.
+*.ipynb text eol=lf
+
+# Checksum-verified inputs: stored byte for byte, with NO line-ending
+# normalisation. This file arrives from the upstream dataset with CRLF endings and
+# its SHA-256 in data/CHECKSUMS.txt is taken over those exact bytes -- letting Git
+# normalise it makes the checksum fail on any non-Windows checkout.
+data/full_table_ae.json -text
+
+# Data and figures: byte-exact, never converted.
+*.parquet binary
+*.png     binary
+*.pdf     binary
+*.docx    binary
+*.zip     binary
+
+# Keep shell scripts and workflows LF regardless of checkout platform.
+*.sh  text eol=lf
+*.yml text eol=lf

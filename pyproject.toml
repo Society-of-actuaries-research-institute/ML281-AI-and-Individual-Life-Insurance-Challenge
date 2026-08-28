@@ -1,0 +1,17 @@
+[project]
+name = "soa-ml281-reproduction"
+version = "1.0.0"
+description = "Reproduction code for the SOA ML281 AI and Individual Life Insurance Challenge submission"
+requires-python = ">=3.11"
+license = { text = "GPL-3.0-or-later" }
+authors = [{ name = "Pramod Misra", email = "pmisra30@gatech.edu" }]
+readme = "README.md"
+
+[project.urls]
+Repository = "https://github.com/Society-of-actuaries-research-institute/ML281-AI-and-Individual-Life-Insurance-Challenge-Pramod-Misra"
+
+[tool.pytest.ini_options]
+# scripts/ holds the shared helpers (ml281_paths) that the tests import.
+pythonpath = ["scripts"]
+testpaths = ["tests"]
+addopts = "-q --strict-markers"

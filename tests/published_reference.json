@@ -1,0 +1,116 @@
+{
+  "_comment": [
+    "Reference values for the ML281 submission, with the tolerance each is checked to.",
+    "'published' is the value quoted in the SOA report; 'reproduced' is what the",
+    "seed-42 reference environment produces (see results/environment.json).",
+    "scripts/verify_results.py and tests/test_results_match_published.py both read",
+    "this file. Tolerances are absolute."
+  ],
+  "checks": [
+    {
+      "key": "full_table_ae_summary.overall_ae",
+      "label": "Full-table A/E vs VBT2015 w/ MI (45.5M cells)",
+      "published": 1.0764,
+      "reproduced": 1.0764,
+      "tolerance": 0.001
+    },
+    {
+      "key": "ablation.test_r2_with_vbt",
+      "label": "Test R2, anchored model (with VBT feature)",
+      "published": 0.759,
+      "reproduced": 0.7591,
+      "tolerance": 0.005
+    },
+    {
+      "key": "ablation.test_r2_without_vbt",
+      "label": "Test R2, ablated model (VBT feature removed)",
+      "published": 0.775,
+      "reproduced": 0.7746,
+      "tolerance": 0.005
+    },
+    {
+      "key": "generalization.cv_r2_mean",
+      "label": "XGBoost 5-fold CV R2, mean",
+      "published": 0.868,
+      "reproduced": 0.8677,
+      "tolerance": 0.005
+    },
+    {
+      "key": "generalization.cv_r2_sd",
+      "label": "XGBoost 5-fold CV R2, standard deviation",
+      "published": 0.015,
+      "reproduced": 0.0153,
+      "tolerance": 0.005
+    },
+    {
+      "key": "poisson_offset.vbt_offset.test_RMSE",
+      "label": "Poisson VBT-offset model, test RMSE",
+      "published": 0.403,
+      "reproduced": 0.4033,
+      "tolerance": 0.005
+    },
+    {
+      "key": "poisson_offset.vbt_offset.test_poisson_dev",
+      "label": "Poisson VBT-offset model, test Poisson deviance",
+      "published": 0.151,
+      "reproduced": 0.1507,
+      "tolerance": 0.005
+    },
+    {
+      "key": "poisson_offset.vbt_offset.AE_model",
+      "label": "Poisson VBT-offset model, test A/E",
+      "published": 0.994,
+      "reproduced": 0.9936,
+      "tolerance": 0.005
+    },
+    {
+      "key": "out_of_time.ae_vbt_static",
+      "label": "Out-of-time A/E 2018-19, static VBT2015",
+      "published": 1.023,
+      "reproduced": 1.0231,
+      "tolerance": 0.005
+    },
+    {
+      "key": "out_of_time.ae_poisson_vbt_offset",
+      "label": "Out-of-time A/E 2018-19, Poisson VBT-offset",
+      "published": 0.96,
+      "reproduced": 0.9596,
+      "tolerance": 0.005
+    },
+    {
+      "key": "out_of_time.ae_xgboost_anchored",
+      "label": "Out-of-time A/E 2018-19, XGBoost anchored",
+      "published": 0.922,
+      "reproduced": 0.9217,
+      "tolerance": 0.005
+    },
+    {
+      "key": "out_of_time.ae_xgboost_no_vbt",
+      "label": "Out-of-time A/E 2018-19, XGBoost without VBT",
+      "published": 0.897,
+      "reproduced": 0.8973,
+      "tolerance": 0.005
+    },
+    {
+      "key": "copula.rho",
+      "label": "Frequency-severity Gaussian copula rho",
+      "published": -0.366,
+      "reproduced": -0.3659,
+      "tolerance": 0.005
+    },
+    {
+      "key": "copula.tvar99_over_mean",
+      "label": "Aggregate loss TVaR99 / mean load",
+      "published": 1.18,
+      "reproduced": 1.1979,
+      "tolerance": 0.03,
+      "note": "Monte-Carlo noisy: 1.180-1.198 across simulation seeds and counts. The wide tolerance is deliberate; see RESULTS.md."
+    }
+  ],
+  "multimodel_cv_r2": [
+    {"model": "Neural Net (64-32-16)", "published": 0.915, "reproduced": 0.9149, "tolerance": 0.005},
+    {"model": "GLM (Poisson)", "published": 0.906, "reproduced": 0.9058, "tolerance": 0.005},
+    {"model": "Random Forest", "published": 0.893, "reproduced": 0.8925, "tolerance": 0.005},
+    {"model": "XGBoost", "published": 0.868, "reproduced": 0.8677, "tolerance": 0.005}
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "cv_folds": 5,
+  "models": [
+    {
+      "cv_r2_mean": 0.9058,
+      "cv_r2_sd": 0.0115,
+      "cv_rmse_mean": 0.4245,
+      "cv_rmse_sd": 0.0629,
+      "model": "GLM (Poisson)"
+    },
+    {
+      "cv_r2_mean": 0.9149,
+      "cv_r2_sd": 0.0112,
+      "cv_rmse_mean": 0.3997,
+      "cv_rmse_sd": 0.0263,
+      "model": "Neural Net (64-32-16)"
+    },
+    {
+      "cv_r2_mean": 0.8925,
+      "cv_r2_sd": 0.0204,
+      "cv_rmse_mean": 0.4516,
+      "cv_rmse_sd": 0.0698,
+      "model": "Random Forest"
+    },
+    {
+      "cv_r2_mean": 0.8677,
+      "cv_r2_sd": 0.0153,
+      "cv_rmse_mean": 0.5016,
+      "cv_rmse_sd": 0.0628,
+      "model": "XGBoost"
+    }
+  ]
+}
