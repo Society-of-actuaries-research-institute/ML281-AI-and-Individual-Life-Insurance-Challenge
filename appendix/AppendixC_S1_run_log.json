@@ -1,0 +1,27 @@
+{
+  "run_id": "20260604_143141_5dcccb",
+  "run_timestamp": "2026-06-04T14:31:41.049976",
+  "report_type": "validation_diagnostic",
+  "input_hash": "83a313f0985d1ae7",
+  "prompt_version": "065c5aec",
+  "llm_model_version": "gemini-2.5-flash-lite (google)",
+  "approval_status": "ai_draft",
+  "draft_snapshot": "{\n  \"executive_summary\": \"The overall A/E ratio of 0.9989 indicates good model calibration for the 2012-2019 experience period. However, year-over-year A/E ratios show variability, with 2015 (1.0085) and 2018 (1.0169) deviating by more than +/-1% from the overall average. These deviations warrant further investigation into potential underlying drivers, for reference only and subject to actuarial review.\",\n  \"yearly_compare_notes\": \"The yearly A/E ratios exhibit fluctuations. The years 2015 (1.0085) and 2018 (1.0169) show A/E ratios exceeding the overall average by more than 1%. Conversely, 2016 (0.9881) and 2019 (0.9885) show ratios below the overall average. These deviations suggest potential shifts in mortality experience or model performance across years. Further analysis could explore factors contributing to these specific year-end trends, such as changes in underwriting, product mix, or external environmental factors impacting mortality during those periods. This analysis adheres to ASOP 23, 25, 41, and 56 principles, considering data limitations (2012-2019) and the need for actuarial review, for reference only.\",\n  \"age_curve_notes\": \"The model's performance across different attained ages needs to be assessed. While the overall A/E is stable, specific age bands might exhibit deviations. For instance, the acceleration of mortality risk observed after age 60 (as per EDA Insight 1) could be a focal point for deeper analysis. Investigating the A/E ratios within specific age segments, particularly the extreme tails (e.g., above 83), is recommended to ensure model reliability and identify potential areas of increased uncertainty or data limitations, consistent with ASOP 25 and 41, for reference only.\",\n  \"mix_shift_notes\": \"The significant proportion of Term products (approx. 46%) in the dataset (EDA Insight 6) suggests that overall model performance is heavily influenced by this segment. Analyzing A/E ratios segmented by product type (Term vs. Permanent) is crucial. A shift in product mix or differing mortality trends between product types could explain some of the year-over-year variability observed in the A/E ratios. This aligns with ASOP 23's emphasis on data quality and ASOP 56's requirement for understanding model drivers, for reference only.\",\n  \"drift_flags_notes\": \"The observed year-over-year variability in A/E ratios, particularly the deviations in 2015, 2018, 2016, and 2019, could indicate drift in mortality trends or model performance. The elevation in A/E in 2018 is noted in the external context as potentially related to data reclassification of Variable Life (VL) products. Further investigation is needed to determine if these deviations represent true shifts in mortality experience or issues with data consistency over time. This requires careful consideration under ASOP 41 and ASOP 56, distinguishing between emerging experience and model behavior, for reference only.\",\n  \"hypothesis_directions\": [\n    \"Investigate the drivers behind the elevated A/E ratios in 2015 (1.0085) and 2018 (1.0169), considering potential impacts of underwriting changes, product mix shifts, or specific cohort effects, adhering to ASOP 23/25/41/56.\",\n    \"Analyze mortality experience segmented by attained age, particularly focusing on age bands exhibiting higher-than-average deviations from the overall A/E ratio, to assess age-curve stability, consistent with ASOP 25 and 41.\",\n    \"Examine the mortality experience of different product types (Term vs. Permanent) to understand if the observed A/E variability is concentrated within specific product segments, aligning with ASOP 23 and 56.\",\n    \"Explore the impact of data quality and reclassification events (e.g., the 2018 VL reclassification) on yearly A/E trends, adhering to ASOP 23 principles.\",\n    \"Assess the stability of mortality trends for long-duration policies and older attained ages, where model uncertainty may be higher, in line with ASOP 25 credibility principles.\"\n  ]\n}",
+  "self_review_applied": true,
+  "constraint_check": {
+    "causal_violations": [],
+    "number_mismatches": [],
+    "missing_disclaimers": [],
+    "out_of_scope_claims": [],
+    "passed": true
+  },
+  "evidence_map": null,
+  "final_output_files": [
+    "D:\\00771023\\Project\\13-AISC\\SOA\\SOA_Challenge-main\\data\\reports\\run_logs\\20260604_143141_5dcccb\\final_report_20260604_143150.md",
+    "D:\\00771023\\Project\\13-AISC\\SOA\\SOA_Challenge-main\\data\\reports\\run_logs\\20260604_143141_5dcccb\\final_report_20260604_143150.json"
+  ],
+  "total_tokens": 0,
+  "cost_usd": 0.0,
+  "run_duration_sec": 9.46,
+  "validation_notes": []
+}

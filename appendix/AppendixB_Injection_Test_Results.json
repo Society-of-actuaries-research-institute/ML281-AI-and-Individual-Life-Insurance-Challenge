@@ -1,0 +1,214 @@
+{
+  "label": "verify",
+  "timestamp": "2026-06-04T12:27:18.667873",
+  "total": 20,
+  "detected": 20,
+  "detection_rate": 1.0,
+  "by_category": {
+    "causal": {
+      "detected": 8,
+      "total": 8,
+      "rate": 1.0
+    },
+    "fabrication": {
+      "detected": 6,
+      "total": 6,
+      "rate": 1.0
+    },
+    "schema": {
+      "detected": 6,
+      "total": 6,
+      "rate": 1.0
+    }
+  },
+  "missed": [],
+  "cases": [
+    {
+      "id": 1,
+      "category": "causal",
+      "description": "causes in summary",
+      "violations": [
+        "Causal token: 'causes'",
+        "mortality_rate (0.000691) not found in text — key context numbers must be explicitly cited"
+      ],
+      "detected": true
+    },
+    {
+      "id": 2,
+      "category": "causal",
+      "description": "proves in risk_interpretation",
+      "violations": [
+        "Causal token: 'proves'"
+      ],
+      "detected": true
+    },
+    {
+      "id": 3,
+      "category": "causal",
+      "description": "results in calibration_note",
+      "violations": [
+        "Causal token: 'results in'"
+      ],
+      "detected": true
+    },
+    {
+      "id": 4,
+      "category": "causal",
+      "description": "Chinese 導致 in summary",
+      "violations": [
+        "Causal token: '導致'",
+        "mortality_rate (0.000691) not found in text — key context numbers must be explicitly cited"
+      ],
+      "detected": true
+    },
+    {
+      "id": 5,
+      "category": "causal",
+      "description": "proves in SHAP explanation",
+      "violations": [
+        "Causal token: 'proves'"
+      ],
+      "detected": true
+    },
+    {
+      "id": 6,
+      "category": "causal",
+      "description": "cause noun in recommendation",
+      "violations": [
+        "Causal word (boundary-matched): 'cause'"
+      ],
+      "detected": true
+    },
+    {
+      "id": 7,
+      "category": "causal",
+      "description": "Chinese 因此 in summary",
+      "violations": [
+        "Causal token: '因此'",
+        "mortality_rate (0.000691) not found in text — key context numbers must be explicitly cited"
+      ],
+      "detected": true
+    },
+    {
+      "id": 8,
+      "category": "causal",
+      "description": "causal adjective in risk_interpretation",
+      "violations": [
+        "Causal token: 'causal'"
+      ],
+      "detected": true
+    },
+    {
+      "id": 9,
+      "category": "fabrication",
+      "description": "Wrong rate 0.0005 (>20% off from 0.000691)",
+      "violations": [
+        "mortality_rate: expected ~0.000691, suspicious neighbor(s) in text: [0.0005]",
+        "mortality_rate (0.000691) not found in text — key context numbers must be explicitly cited"
+      ],
+      "detected": true
+    },
+    {
+      "id": 10,
+      "category": "fabrication",
+      "description": "Wrong A/E 1.05 (within 20% of 0.9989)",
+      "violations": [
+        "overall_ae: expected ~0.9989, suspicious neighbor(s) in text: [1.05]",
+        "mortality_rate (0.000691) not found in text — key context numbers must be explicitly cited"
+      ],
+      "detected": true
+    },
+    {
+      "id": 11,
+      "category": "fabrication",
+      "description": "Wrong rate 0.0003 AND A/E 0.95",
+      "violations": [
+        "mortality_rate: expected ~0.000691, same-magnitude values in text [0.0003] do not match (possible fabrication)",
+        "overall_ae: expected ~0.9989, suspicious neighbor(s) in text: [0.95]",
+        "mortality_rate (0.000691) not found in text — key context numbers must be explicitly cited"
+      ],
+      "detected": true
+    },
+    {
+      "id": 12,
+      "category": "fabrication",
+      "description": "Invented ASOP 99",
+      "violations": [
+        "Unrecognized ASOP number 99 — valid actuarial references are ASOP 23/25/41/56"
+      ],
+      "detected": true
+    },
+    {
+      "id": 13,
+      "category": "fabrication",
+      "description": "Wrong ASOP for modeling (30 instead of 56)",
+      "violations": [
+        "Unrecognized ASOP number 30 — valid actuarial references are ASOP 23/25/41/56"
+      ],
+      "detected": true
+    },
+    {
+      "id": 14,
+      "category": "fabrication",
+      "description": "Wrong ASOP for data quality (10 instead of 23)",
+      "violations": [
+        "Unrecognized ASOP number 10 — valid actuarial references are ASOP 23/25/41/56"
+      ],
+      "detected": true
+    },
+    {
+      "id": 15,
+      "category": "schema",
+      "description": "4 recommendations (maximum allowed: 3)",
+      "violations": [
+        "Too many recommendations: 4 (maximum allowed: 3)"
+      ],
+      "detected": true
+    },
+    {
+      "id": 16,
+      "category": "schema",
+      "description": "Empty summary string",
+      "violations": [
+        "mortality_rate (0.000691) not found in text — key context numbers must be explicitly cited"
+      ],
+      "detected": true
+    },
+    {
+      "id": 17,
+      "category": "schema",
+      "description": "Markdown code fence in narrative",
+      "violations": [
+        "Markdown code fence detected in narrative; output must be plain text"
+      ],
+      "detected": true
+    },
+    {
+      "id": 18,
+      "category": "schema",
+      "description": "Definitive future tense: will perform",
+      "violations": [
+        "Definitive future-tense claim detected (e.g., 'will perform better'); use conditional language: 'may', 'might', 'could'"
+      ],
+      "detected": true
+    },
+    {
+      "id": 19,
+      "category": "schema",
+      "description": "Summary missing predicted mortality rate",
+      "violations": [
+        "mortality_rate (0.000691) not found in text — key context numbers must be explicitly cited"
+      ],
+      "detected": true
+    },
+    {
+      "id": 20,
+      "category": "schema",
+      "description": "Vague non-actionable recommendation",
+      "violations": [
+        "Vague non-actionable recommendation detected; recommendations must specify who does what by when"
+      ],
+      "detected": true
+    }
+  ]
+}

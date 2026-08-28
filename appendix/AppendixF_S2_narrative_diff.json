@@ -1,0 +1,53 @@
+{
+  "status": "diff_computed",
+  "lines_added": 133,
+  "lines_removed": 42,
+  "sample_added": [
+    "- Persistence: 0.74",
+    "- Stability Note: Anomaly present in 6/8 years (direction: Under)",
+    "- Compare the model's predicted mortality rates for this age group with industry benchmarks for similar products.",
+    "- Rule: Duration <= 17.5 AND Attained_Age <= 48.5 AND Face Amount Band: 100,000 - 249,999 AND SOA Guar 20 yr guaranteed is No AND SOA Post ULT is Yes AND Preferred Class is NOT 1",
+    "- Investigate potential data quality issues related to the 'SOA Guar 20 yr guaranteed' and 'SOA Post ULT' variables."
+  ],
+  "sample_removed": [
+    "- year_factors: {'2012': 0.9736, '2013': 0.9825, '2014': 1.0036, '2015': 0.9953, '2016': 0.9846, '2017': 1.0082, '2018': 1.0041, '2019': 0.9859}",
+    "## 7. Disclaimers",
+    "# Validation Diagnostic Report",
+    "- Overall A/E: 0.9989",
+    "- Model: LGBM Offset Poisson Mortality Model"
+  ],
+  "numbers_added": [
+    -24.7,
+    -9.1,
+    -5.2,
+    0.15,
+    0.229,
+    0.268,
+    0.348,
+    0.35,
+    0.37,
+    0.5
+  ],
+  "numbers_removed": [
+    0.1,
+    0.95,
+    0.9736,
+    0.9825,
+    0.9846,
+    0.9859,
+    0.9881,
+    0.9885,
+    0.9906,
+    0.9949
+  ],
+  "causal_language_added": [
+    "causal",
+    "leads to"
+  ],
+  "causal_language_removed": [],
+  "disclaimer_changes": {
+    "asop": "added",
+    "reference only": "added"
+  },
+  "risk_level_changed": true
+}

@@ -1,0 +1,29 @@
+{
+  "segment_id": "SPOT_276",
+  "rule_list": [
+    "Duration > 17.5",
+    "Face Amount Band <= 25,000 - 49,999",
+    "42.5 < Attained_Age <= 49.5",
+    "Insurance Plan is Perm",
+    "Smoker Status is Known",
+    "Preferred Class is NOT U"
+  ],
+  "rule_text": "Duration > 17.5 AND Face Amount Band <= 25,000 - 49,999 AND 42.5 < Attained_Age <= 49.5 AND Insurance Plan is Perm AND Smoker Status is Known AND Preferred Class is NOT U",
+  "statistics": {
+    "exposure": 12739,
+    "actual_deaths": 26,
+    "expected_deaths": 33.25,
+    "ae_ratio": 0.782,
+    "credibility_score": 1.0,
+    "stability": {
+      "year_col": "Observation_Year",
+      "years_analyzed": 8,
+      "anomaly_years": 6,
+      "direction": "Under",
+      "direction_consistency": 0.386,
+      "persistence": 0.685,
+      "stability_score": 0.589,
+      "log_ae_sd": 0.53
+    }
+  }
+}

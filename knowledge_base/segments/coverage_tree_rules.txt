@@ -1,0 +1,46 @@
+|--- Duration <= 17.50
+|   |--- Attained_Age <= 48.50
+|   |   |--- Insurance_Plan <= 3.50
+|   |   |   |--- Smoker_Status <= 1.50
+|   |   |   |   |--- value: [0.39]
+|   |   |   |--- Smoker_Status >  1.50
+|   |   |   |   |--- value: [0.58]
+|   |   |--- Insurance_Plan >  3.50
+|   |   |   |--- Duration <= 13.50
+|   |   |   |   |--- value: [0.17]
+|   |   |   |--- Duration >  13.50
+|   |   |   |   |--- value: [0.30]
+|   |--- Attained_Age >  48.50
+|   |   |--- Duration <= 6.50
+|   |   |   |--- Attained_Age <= 61.50
+|   |   |   |   |--- value: [0.48]
+|   |   |   |--- Attained_Age >  61.50
+|   |   |   |   |--- value: [0.65]
+|   |   |--- Duration >  6.50
+|   |   |   |--- Attained_Age <= 58.50
+|   |   |   |   |--- value: [0.66]
+|   |   |   |--- Attained_Age >  58.50
+|   |   |   |   |--- value: [0.78]
+|--- Duration >  17.50
+|   |--- Insurance_Plan <= 1.50
+|   |   |--- Attained_Age <= 48.50
+|   |   |   |--- Smoker_Status <= 1.50
+|   |   |   |   |--- value: [0.77]
+|   |   |   |--- Smoker_Status >  1.50
+|   |   |   |   |--- value: [0.94]
+|   |   |--- Attained_Age >  48.50
+|   |   |   |--- Insurance_Plan <= 0.50
+|   |   |   |   |--- value: [0.83]
+|   |   |   |--- Insurance_Plan >  0.50
+|   |   |   |   |--- value: [0.99]
+|   |--- Insurance_Plan >  1.50
+|   |   |--- Attained_Age <= 51.50
+|   |   |   |--- Insurance_Plan <= 2.50
+|   |   |   |   |--- value: [0.54]
+|   |   |   |--- Insurance_Plan >  2.50
+|   |   |   |   |--- value: [0.71]
+|   |   |--- Attained_Age >  51.50
+|   |   |   |--- Insurance_Plan <= 2.50
+|   |   |   |   |--- value: [0.80]
+|   |   |   |--- Insurance_Plan >  2.50
+|   |   |   |   |--- value: [0.94]

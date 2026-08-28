@@ -1,0 +1,31 @@
+{
+  "segment_id": "SPOT_325",
+  "rule_list": [
+    "Duration > 17.5",
+    "Face Amount Band <= 100,000 - 249,999",
+    "Attained_Age > 49.5",
+    "Preferred Class is U",
+    "SOA Post NA is No",
+    "SOA Post ULT is No",
+    "Issue_Age <= 25.5",
+    "Sex is Female"
+  ],
+  "rule_text": "Duration > 17.5 AND Face Amount Band <= 100,000 - 249,999 AND Attained_Age > 49.5 AND Preferred Class is U AND SOA Post NA is No AND SOA Post ULT is No AND Issue_Age <= 25.5 AND Sex is Female",
+  "statistics": {
+    "exposure": 7249,
+    "actual_deaths": 31,
+    "expected_deaths": 25.659,
+    "ae_ratio": 1.208,
+    "credibility_score": 1.0,
+    "stability": {
+      "year_col": "Observation_Year",
+      "years_analyzed": 8,
+      "anomaly_years": 4,
+      "direction": "Under",
+      "direction_consistency": 0.356,
+      "persistence": 0.386,
+      "stability_score": 0.693,
+      "log_ae_sd": 0.367
+    }
+  }
+}

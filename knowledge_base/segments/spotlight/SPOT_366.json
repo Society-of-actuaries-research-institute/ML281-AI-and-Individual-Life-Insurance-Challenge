@@ -1,0 +1,27 @@
+{
+  "segment_id": "SPOT_366",
+  "rule_list": [
+    "Duration > 27.5",
+    "Face Amount Band > 250,000 - 499,999",
+    "32.5 < Attained_Age <= 49.5",
+    "Issue_Age <= 12.5"
+  ],
+  "rule_text": "Duration > 27.5 AND Face Amount Band > 250,000 - 499,999 AND 32.5 < Attained_Age <= 49.5 AND Issue_Age <= 12.5",
+  "statistics": {
+    "exposure": 5891,
+    "actual_deaths": 3,
+    "expected_deaths": 6.127,
+    "ae_ratio": 0.49,
+    "credibility_score": 1.0,
+    "stability": {
+      "year_col": "Observation_Year",
+      "years_analyzed": 8,
+      "anomaly_years": 8,
+      "direction": "Under",
+      "direction_consistency": 0.556,
+      "persistence": 1.0,
+      "stability_score": 0.276,
+      "log_ae_sd": 1.286
+    }
+  }
+}

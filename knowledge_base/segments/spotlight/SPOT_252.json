@@ -1,0 +1,30 @@
+{
+  "segment_id": "SPOT_252",
+  "rule_list": [
+    "Duration > 17.5",
+    "Face Amount Band <= 100,000 - 249,999",
+    "Attained_Age <= 46.5",
+    "Insurance Plan is NOT Perm",
+    "Insurance Plan is UL",
+    "Preferred Class is NOT U",
+    "Sex is Female"
+  ],
+  "rule_text": "Duration > 17.5 AND Face Amount Band <= 100,000 - 249,999 AND Attained_Age <= 46.5 AND Insurance Plan is NOT Perm AND Insurance Plan is UL AND Preferred Class is NOT U AND Sex is Female",
+  "statistics": {
+    "exposure": 21098,
+    "actual_deaths": 13,
+    "expected_deaths": 22.078,
+    "ae_ratio": 0.589,
+    "credibility_score": 1.0,
+    "stability": {
+      "year_col": "Observation_Year",
+      "years_analyzed": 8,
+      "anomaly_years": 6,
+      "direction": "Under",
+      "direction_consistency": 1.0,
+      "persistence": 0.711,
+      "stability_score": 0.498,
+      "log_ae_sd": 0.698
+    }
+  }
+}

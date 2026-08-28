@@ -1,0 +1,29 @@
+{
+  "segment_id": "SPOT_418",
+  "rule_list": [
+    "Duration > 17.5",
+    "Face Amount Band > 250,000 - 499,999",
+    "Attained_Age > 59.5",
+    "Sex is Female",
+    "SOA Post WLT is Yes",
+    "Preferred Class is NOT 1"
+  ],
+  "rule_text": "Duration > 17.5 AND Face Amount Band > 250,000 - 499,999 AND Attained_Age > 59.5 AND Sex is Female AND SOA Post WLT is Yes AND Preferred Class is NOT 1",
+  "statistics": {
+    "exposure": 12039,
+    "actual_deaths": 37,
+    "expected_deaths": 50.162,
+    "ae_ratio": 0.738,
+    "credibility_score": 1.0,
+    "stability": {
+      "year_col": "Observation_Year",
+      "years_analyzed": 8,
+      "anomaly_years": 7,
+      "direction": "Under",
+      "direction_consistency": 1.0,
+      "persistence": 0.734,
+      "stability_score": 0.716,
+      "log_ae_sd": 0.334
+    }
+  }
+}

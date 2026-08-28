@@ -1,0 +1,28 @@
+{
+  "segment_id": "SPOT_361",
+  "rule_list": [
+    "17.5 < Duration <= 27.5",
+    "Face Amount Band > 250,000 - 499,999",
+    "Attained_Age <= 49.5",
+    "26.5 < Issue_Age <= 27.5",
+    "SOA Antp N/A (Not Term) is No"
+  ],
+  "rule_text": "17.5 < Duration <= 27.5 AND Face Amount Band > 250,000 - 499,999 AND Attained_Age <= 49.5 AND 26.5 < Issue_Age <= 27.5 AND SOA Antp N/A (Not Term) is No",
+  "statistics": {
+    "exposure": 8650,
+    "actual_deaths": 5,
+    "expected_deaths": 8.494,
+    "ae_ratio": 0.589,
+    "credibility_score": 1.0,
+    "stability": {
+      "year_col": "Observation_Year",
+      "years_analyzed": 8,
+      "anomaly_years": 7,
+      "direction": "Under",
+      "direction_consistency": 0.586,
+      "persistence": 0.897,
+      "stability_score": 0.302,
+      "log_ae_sd": 1.196
+    }
+  }
+}

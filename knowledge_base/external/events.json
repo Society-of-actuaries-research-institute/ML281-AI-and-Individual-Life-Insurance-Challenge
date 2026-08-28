@@ -1,0 +1,32 @@
+[
+  {
+    "year": 2018,
+    "type": "data_reclassification",
+    "description": "Variable Life (VL) category reclassified to 'Other' in ILEC data; associated with A/E elevation to 1.017 in 2018 observation year"
+  },
+  {
+    "year": 2015,
+    "type": "regulatory",
+    "description": "ACA (Affordable Care Act) full implementation; may have introduced selection effects on individual life insurance as health insurance access changed"
+  },
+  {
+    "year": 2012,
+    "type": "regulatory",
+    "description": "ILEC data collection period begins (2012); AG 38 reserve regulations may affect term product mix"
+  },
+  {
+    "year_range": "2012-2019",
+    "type": "trend",
+    "description": "US all-cause mortality improvement slowdown compared to prior decade; opioid epidemic contributed to excess deaths in ages 25-54"
+  },
+  {
+    "year_range": "2014-2016",
+    "type": "trend",
+    "description": "SOA MP-2014/2015/2016 improvement scale updates progressively reduced assumed future mortality improvement rates"
+  },
+  {
+    "year": 2019,
+    "type": "data_note",
+    "description": "Final observation year in training data (2019); COVID-19 pandemic effects are outside training scope — model predictions beyond 2019 should be treated with caution"
+  }
+]

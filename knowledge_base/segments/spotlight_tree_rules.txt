@@ -1,0 +1,175 @@
+|--- Attained_Age <= 78.50
+|   |--- Attained_Age <= 69.50
+|   |   |--- Attained_Age <= 60.50
+|   |   |   |--- Attained_Age <= 51.50
+|   |   |   |   |--- Duration <= 19.50
+|   |   |   |   |   |--- Attained_Age <= 45.50
+|   |   |   |   |   |   |--- value: [0.14]
+|   |   |   |   |   |--- Attained_Age >  45.50
+|   |   |   |   |   |   |--- value: [0.19]
+|   |   |   |   |--- Duration >  19.50
+|   |   |   |   |   |--- Attained_Age <= 38.50
+|   |   |   |   |   |   |--- value: [0.18]
+|   |   |   |   |   |--- Attained_Age >  38.50
+|   |   |   |   |   |   |--- value: [0.29]
+|   |   |   |--- Attained_Age >  51.50
+|   |   |   |   |--- Smoker_Status <= 0.50
+|   |   |   |   |   |--- Face_Amount_Band <= 3.50
+|   |   |   |   |   |   |--- value: [0.39]
+|   |   |   |   |   |--- Face_Amount_Band >  3.50
+|   |   |   |   |   |   |--- value: [0.26]
+|   |   |   |   |--- Smoker_Status >  0.50
+|   |   |   |   |   |--- Attained_Age <= 56.50
+|   |   |   |   |   |   |--- value: [0.54]
+|   |   |   |   |   |--- Attained_Age >  56.50
+|   |   |   |   |   |   |--- value: [0.70]
+|   |   |--- Attained_Age >  60.50
+|   |   |   |--- Smoker_Status <= 0.50
+|   |   |   |   |--- Duration <= 19.50
+|   |   |   |   |   |--- Face_Amount_Band <= 3.50
+|   |   |   |   |   |   |--- value: [0.63]
+|   |   |   |   |   |--- Face_Amount_Band >  3.50
+|   |   |   |   |   |   |--- value: [0.40]
+|   |   |   |   |--- Duration >  19.50
+|   |   |   |   |   |--- Attained_Age <= 65.50
+|   |   |   |   |   |   |--- value: [0.62]
+|   |   |   |   |   |--- Attained_Age >  65.50
+|   |   |   |   |   |   |--- value: [0.94]
+|   |   |   |--- Smoker_Status >  0.50
+|   |   |   |   |--- Attained_Age <= 65.50
+|   |   |   |   |   |--- Duration <= 32.50
+|   |   |   |   |   |   |--- value: [1.18]
+|   |   |   |   |   |--- Duration >  32.50
+|   |   |   |   |   |   |--- value: [0.86]
+|   |   |   |   |--- Attained_Age >  65.50
+|   |   |   |   |   |--- Duration <= 34.50
+|   |   |   |   |   |   |--- value: [1.71]
+|   |   |   |   |   |--- Duration >  34.50
+|   |   |   |   |   |   |--- value: [1.20]
+|   |--- Attained_Age >  69.50
+|   |   |--- Smoker_Status <= 0.50
+|   |   |   |--- Duration <= 20.50
+|   |   |   |   |--- Face_Amount_Band <= 2.50
+|   |   |   |   |   |--- Attained_Age <= 74.50
+|   |   |   |   |   |   |--- value: [1.20]
+|   |   |   |   |   |--- Attained_Age >  74.50
+|   |   |   |   |   |   |--- value: [1.86]
+|   |   |   |   |--- Face_Amount_Band >  2.50
+|   |   |   |   |   |--- Duration <= 8.50
+|   |   |   |   |   |   |--- value: [0.57]
+|   |   |   |   |   |--- Duration >  8.50
+|   |   |   |   |   |   |--- value: [0.94]
+|   |   |   |--- Duration >  20.50
+|   |   |   |   |--- Attained_Age <= 74.50
+|   |   |   |   |   |--- Attained_Age <= 72.50
+|   |   |   |   |   |   |--- value: [1.31]
+|   |   |   |   |   |--- Attained_Age >  72.50
+|   |   |   |   |   |   |--- value: [1.74]
+|   |   |   |   |--- Attained_Age >  74.50
+|   |   |   |   |   |--- Attained_Age <= 77.50
+|   |   |   |   |   |   |--- value: [2.25]
+|   |   |   |   |   |--- Attained_Age >  77.50
+|   |   |   |   |   |   |--- value: [2.91]
+|   |   |--- Smoker_Status >  0.50
+|   |   |   |--- Attained_Age <= 74.50
+|   |   |   |   |--- Duration <= 35.50
+|   |   |   |   |   |--- Face_Amount_Band <= 3.50
+|   |   |   |   |   |   |--- value: [2.68]
+|   |   |   |   |   |--- Face_Amount_Band >  3.50
+|   |   |   |   |   |   |--- value: [1.37]
+|   |   |   |   |--- Duration >  35.50
+|   |   |   |   |   |--- Attained_Age <= 71.50
+|   |   |   |   |   |   |--- value: [1.59]
+|   |   |   |   |   |--- Attained_Age >  71.50
+|   |   |   |   |   |   |--- value: [2.11]
+|   |   |   |--- Attained_Age >  74.50
+|   |   |   |   |--- Attained_Age <= 76.50
+|   |   |   |   |   |--- Duration <= 34.50
+|   |   |   |   |   |   |--- value: [3.38]
+|   |   |   |   |   |--- Duration >  34.50
+|   |   |   |   |   |   |--- value: [2.74]
+|   |   |   |   |--- Attained_Age >  76.50
+|   |   |   |   |   |--- Duration <= 32.50
+|   |   |   |   |   |   |--- value: [4.07]
+|   |   |   |   |   |--- Duration >  32.50
+|   |   |   |   |   |   |--- value: [3.43]
+|--- Attained_Age >  78.50
+|   |--- Attained_Age <= 84.50
+|   |   |--- Smoker_Status <= 0.50
+|   |   |   |--- Duration <= 18.50
+|   |   |   |   |--- Face_Amount_Band <= 1.50
+|   |   |   |   |   |--- value: [3.02]
+|   |   |   |   |--- Face_Amount_Band >  1.50
+|   |   |   |   |   |--- Face_Amount_Band <= 4.50
+|   |   |   |   |   |   |--- value: [1.79]
+|   |   |   |   |   |--- Face_Amount_Band >  4.50
+|   |   |   |   |   |   |--- value: [0.95]
+|   |   |   |--- Duration >  18.50
+|   |   |   |   |--- Attained_Age <= 80.50
+|   |   |   |   |   |--- Face_Amount_Band <= 3.50
+|   |   |   |   |   |   |--- value: [3.35]
+|   |   |   |   |   |--- Face_Amount_Band >  3.50
+|   |   |   |   |   |   |--- value: [2.63]
+|   |   |   |   |--- Attained_Age >  80.50
+|   |   |   |   |   |--- Face_Amount_Band <= 4.50
+|   |   |   |   |   |   |--- value: [4.65]
+|   |   |   |   |   |--- Face_Amount_Band >  4.50
+|   |   |   |   |   |   |--- value: [1.85]
+|   |   |--- Smoker_Status >  0.50
+|   |   |   |--- Attained_Age <= 81.50
+|   |   |   |   |--- Attained_Age <= 80.50
+|   |   |   |   |   |--- Insurance_Plan <= 1.50
+|   |   |   |   |   |   |--- value: [4.39]
+|   |   |   |   |   |--- Insurance_Plan >  1.50
+|   |   |   |   |   |   |--- value: [2.76]
+|   |   |   |   |--- Attained_Age >  80.50
+|   |   |   |   |   |--- value: [5.15]
+|   |   |   |--- Attained_Age >  81.50
+|   |   |   |   |--- Insurance_Plan <= 1.50
+|   |   |   |   |   |--- Face_Amount_Band <= 1.50
+|   |   |   |   |   |   |--- value: [6.34]
+|   |   |   |   |   |--- Face_Amount_Band >  1.50
+|   |   |   |   |   |   |--- value: [5.29]
+|   |   |   |   |--- Insurance_Plan >  1.50
+|   |   |   |   |   |--- value: [3.11]
+|   |--- Attained_Age >  84.50
+|   |   |--- Insurance_Plan <= 1.50
+|   |   |   |--- Face_Amount_Band <= 1.50
+|   |   |   |   |--- Attained_Age <= 86.50
+|   |   |   |   |   |--- value: [7.69]
+|   |   |   |   |--- Attained_Age >  86.50
+|   |   |   |   |   |--- Insurance_Plan <= 0.50
+|   |   |   |   |   |   |--- value: [4.72]
+|   |   |   |   |   |--- Insurance_Plan >  0.50
+|   |   |   |   |   |   |--- value: [9.26]
+|   |   |   |--- Face_Amount_Band >  1.50
+|   |   |   |   |--- Duration <= 23.50
+|   |   |   |   |   |--- Duration <= 17.50
+|   |   |   |   |   |   |--- value: [1.94]
+|   |   |   |   |   |--- Duration >  17.50
+|   |   |   |   |   |   |--- value: [4.08]
+|   |   |   |   |--- Duration >  23.50
+|   |   |   |   |   |--- Face_Amount_Band <= 4.50
+|   |   |   |   |   |   |--- value: [7.01]
+|   |   |   |   |   |--- Face_Amount_Band >  4.50
+|   |   |   |   |   |   |--- value: [2.73]
+|   |   |--- Insurance_Plan >  1.50
+|   |   |   |--- Duration <= 21.50
+|   |   |   |   |--- Face_Amount_Band <= 4.50
+|   |   |   |   |   |--- Insurance_Plan <= 3.50
+|   |   |   |   |   |   |--- value: [3.56]
+|   |   |   |   |   |--- Insurance_Plan >  3.50
+|   |   |   |   |   |   |--- value: [2.48]
+|   |   |   |   |--- Face_Amount_Band >  4.50
+|   |   |   |   |   |--- Attained_Age <= 87.50
+|   |   |   |   |   |   |--- value: [1.37]
+|   |   |   |   |   |--- Attained_Age >  87.50
+|   |   |   |   |   |   |--- value: [2.06]
+|   |   |   |--- Duration >  21.50
+|   |   |   |   |--- Face_Amount_Band <= 4.50
+|   |   |   |   |   |--- Smoker_Status <= 0.50
+|   |   |   |   |   |   |--- value: [5.98]
+|   |   |   |   |   |--- Smoker_Status >  0.50
+|   |   |   |   |   |   |--- value: [4.06]
+|   |   |   |   |--- Face_Amount_Band >  4.50
+|   |   |   |   |   |--- value: [1.96]

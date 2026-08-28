@@ -1,0 +1,42 @@
+{
+  "run_id": "20260604_143226_468f41",
+  "run_timestamp": "2026-06-04T14:32:26.756116",
+  "report_type": "policy_report",
+  "input_hash": "3a25d4b708af66d4",
+  "prompt_version": "065c5aec",
+  "llm_model_version": "gemini-2.5-flash-lite (google)",
+  "approval_status": "ai_draft",
+  "draft_snapshot": "{\n  \"summary\": \"The predicted mortality rate for this policy is 0.000691, which is lower than the overall average rate of 0.009800. Key drivers associated with increased mortality risk include a policy duration of 30 years and the insured being male. Factors associated with decreased mortality risk include an attained age of 30 and a face amount band of $500,000 - $999,999. The overall A/E ratio of 0.9989 indicates the model is well-calibrated. This analysis is based on data from 2012-2019, in compliance with ASOP 23, 41, and 56, and is for reference only.\",\n  \"risk_interpretation\": \"The predicted mortality rate of 0.000691 is substantially lower than the overall average rate, suggesting a low-risk profile for this policy. The overall A/E ratio of 0.9989 indicates good model calibration for the 2012-2019 data period.\",\n  \"shap_explanations\": [\n    {\n      \"feature\": \"Attained_Age\",\n      \"value\": \"30\",\n      \"direction\": \"Decreases\",\n      \"explanation\": \"An attained age of 30 is associated with lower mortality rates, as it falls within the lower percentiles (9th percentile) of the population and represents a period of generally lower mortality risk.\"\n    },\n    {\n      \"feature\": \"Duration\",\n      \"value\": \"30\",\n      \"direction\": \"Increases\",\n      \"explanation\": \"A policy duration of 30 years is associated with increased mortality rates, as it falls into the higher percentiles (92nd percentile) where selection effects have diminished and underlying mortality trends become more prominent.\"\n    },\n    {\n      \"feature\": \"Issue_Age\",\n      \"value\": \"0\",\n      \"direction\": \"Decreases\",\n      \"explanation\": \"An issue age of 0 is associated with lower mortality rates, reflecting the typical mortality experience of very young individuals at policy inception (0th percentile).\"\n    },\n    {\n      \"feature\": \"Face_Amount_Band\",\n      \"value\": \"07: 500,000 - 999,999\",\n      \"direction\": \"Decreases\",\n      \"explanation\": \"A face amount band of $500,000 - $999,999 is associated with lower mortality rates, as this range typically represents a moderate level of coverage with associated lower risk.\"\n    },\n    {\n      \"feature\": \"Sex\",\n      \"value\": \"M\",\n      \"direction\": \"Increases\",\n      \"explanation\": \"Being male is associated with increased mortality rates compared to females, reflecting general population mortality trends.\"\n    }\n  ],\n  \"calibration_note\": \"The overall A/E ratio of 0.9989 indicates that the model's expected deaths closely align with the actual deaths observed in the data for the period 2012-2019. This suggests the model is well-calibrated overall.\",\n  \"segment_insight\": \"The policy falls within the 'SPOT_364' segment, which has an elevated risk level with an A/E ratio of 1.0.\",\n  \"recommendations\": [\n    \"Review the policy details for any specific factors not captured by the model that might explain the elevated risk within the SPOT_364 segment, considering the A/E of 1.0 for this segment.\",\n    \"Monitor the long policy duration (30 years) for potential increases in mortality risk as the insured ages further, noting this is a key driver of increased risk.\",\n    \"Given the attained age of 30 and issue age of 0, ensure underwriting and policy features are appropriate for this age group, despite the overall low predicted mortality rate.\"\n  ]\n}",
+  "self_review_applied": true,
+  "constraint_check": {
+    "causal_violations": [],
+    "number_mismatches": [],
+    "missing_disclaimers": [],
+    "out_of_scope_claims": [],
+    "passed": true
+  },
+  "evidence_map": {
+    "mortality_rate_source": "predictor.predict() = 0.000691 (lower than avg 0.009800)",
+    "overall_ae_source": "kb.overall_ae = 0.9989 (Death_Count / ExpDth_VBT2015_Cnt; portfolio vs VBT2015)",
+    "shap_sources": [
+      "Attained_Age=30: SHAP=-1.2363 (Decreases)",
+      "Duration=30: SHAP=+0.6428 (Increases)",
+      "Issue_Age=0: SHAP=-0.3323 (Decreases)",
+      "Face_Amount_Band=07: 500,000 - 999,999: SHAP=-0.2913 (Decreases)",
+      "Sex=M: SHAP=+0.2430 (Increases)"
+    ],
+    "segment_sources": [
+      "Coverage: COV_036 A/E=1.008 credibility=high",
+      "Spotlight: SPOT_364 A/E=1.000 risk=elevated"
+    ]
+  },
+  "final_output_files": [
+    "D:\\00771023\\Project\\13-AISC\\SOA\\SOA_Challenge-main\\data\\reports\\run_logs\\20260604_143226_468f41\\final_report_20260604_143237.md",
+    "D:\\00771023\\Project\\13-AISC\\SOA\\SOA_Challenge-main\\data\\reports\\run_logs\\20260604_143226_468f41\\final_report_20260604_143237.json",
+    "D:\\00771023\\Project\\13-AISC\\SOA\\SOA_Challenge-main\\data\\reports\\run_logs\\20260604_143226_468f41\\shap_values.json"
+  ],
+  "total_tokens": 0,
+  "cost_usd": 0.0,
+  "run_duration_sec": 11.0,
+  "validation_notes": []
+}

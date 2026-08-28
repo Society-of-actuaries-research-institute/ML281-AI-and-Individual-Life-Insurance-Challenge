@@ -1,0 +1,28 @@
+{
+  "segment_id": "SPOT_451",
+  "rule_list": [
+    "Duration > 17.5",
+    "Face Amount Band > 500,000 - 999,999",
+    "54.5 < Attained_Age <= 56.5",
+    "Sex is Male",
+    "SOA Post WLT is Yes"
+  ],
+  "rule_text": "Duration > 17.5 AND Face Amount Band > 500,000 - 999,999 AND 54.5 < Attained_Age <= 56.5 AND Sex is Male AND SOA Post WLT is Yes",
+  "statistics": {
+    "exposure": 14540,
+    "actual_deaths": 32,
+    "expected_deaths": 24.326,
+    "ae_ratio": 1.315,
+    "credibility_score": 1.0,
+    "stability": {
+      "year_col": "Observation_Year",
+      "years_analyzed": 8,
+      "anomaly_years": 8,
+      "direction": "Over",
+      "direction_consistency": 0.303,
+      "persistence": 1.0,
+      "stability_score": 0.539,
+      "log_ae_sd": 0.619
+    }
+  }
+}

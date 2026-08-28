@@ -1,0 +1,27 @@
+{
+  "segment_id": "SPOT_009",
+  "rule_list": [
+    "Duration <= 6.5",
+    "4.5 < Attained_Age <= 19.5",
+    "Face Amount Band <= 25,000 - 49,999",
+    "Insurance Plan is NOT Perm"
+  ],
+  "rule_text": "Duration <= 6.5 AND 4.5 < Attained_Age <= 19.5 AND Face Amount Band <= 25,000 - 49,999 AND Insurance Plan is NOT Perm",
+  "statistics": {
+    "exposure": 100375,
+    "actual_deaths": 11,
+    "expected_deaths": 20.058,
+    "ae_ratio": 0.548,
+    "credibility_score": 1.0,
+    "stability": {
+      "year_col": "Observation_Year",
+      "years_analyzed": 8,
+      "anomaly_years": 7,
+      "direction": "Under",
+      "direction_consistency": 0.462,
+      "persistence": 0.908,
+      "stability_score": 0.35,
+      "log_ae_sd": 1.049
+    }
+  }
+}
