@@ -1,0 +1,91 @@
+name: reproduce
+
+# Proves the reproduction pipeline still works, on every push and pull request.
+#
+# Two guarantees, no secrets and no large downloads:
+#   1. the committed results ledger still matches the published values (pytest)
+#   2. the notebook still executes end to end (smoke run on the committed fixture)
+#
+# The smoke run is deliberately shrunken and writes to .smoke/, so it can never
+# overwrite the published figures or results. It does NOT reproduce the paper's
+# numbers -- that is a full local run, documented in README.md.
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install the pinned reference environment
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Record the resolved environment
+        run: pip freeze
+
+      - name: Data contract and published-value tests
+        run: python -m pytest -v
+
+      - name: Smoke-execute the reproduction notebook
+        env:
+          ML281_SMOKE: "1"
+        run: python scripts/run_notebook.py --no-html
+
+      - name: Confirm the smoke run produced all seven figures
+        run: |
+          set -euo pipefail
+          missing=0
+          for fig in fig1_eda_ae_segments fig2_xgb_performance fig3_multimodel \
+                     fig4_ablation_offset fig5_shap fig6_copula_aggregate \
+                     fig7_out_of_time; do
+            if [ ! -s ".smoke/figures/${fig}.png" ]; then
+              echo "MISSING: .smoke/figures/${fig}.png"
+              missing=1
+            fi
+          done
+          [ "$missing" -eq 0 ] || exit 1
+          echo "all seven figures produced"
+
+      - name: Confirm the published figures and results were not modified
+        run: |
+          set -euo pipefail
+          if ! git diff --quiet -- figures results; then
+            echo "The smoke run modified committed figures/ or results/:"
+            git diff --stat -- figures results
+            exit 1
+          fi
+          echo "committed figures/ and results/ are untouched"
+
+      - name: Upload the smoke output for inspection
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: smoke-output
+          path: .smoke/
+          retention-days: 14
+          # .smoke/ is dot-prefixed, and upload-artifact skips hidden paths unless
+          # told otherwise -- without this the artifact uploads silently empty.
+          include-hidden-files: true
+          # warn, not error: when an earlier step fails before the smoke run there
+          # is legitimately nothing to upload, and one failure is enough.
+          if-no-files-found: warn

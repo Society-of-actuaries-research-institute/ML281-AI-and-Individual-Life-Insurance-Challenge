@@ -1,0 +1,9 @@
+{
+  "aggregate_mean": 1009885350.24,
+  "n_cells_with_deaths": 5059,
+  "rho": -0.3659,
+  "sims": 2500,
+  "tvar99": 1209738494.16,
+  "tvar99_over_mean": 1.1979,
+  "var99": 1159602513.95
+}

@@ -1,0 +1,24 @@
+# The full model input is fetched by scripts/download_data.py and verified
+# against data/CHECKSUMS.txt. It is deliberately not committed: it is available
+# publicly and re-downloadable, and keeping it out keeps the repo small.
+data/soa_sample.parquet
+data/*.part
+
+# Smoke-mode output. Written by ML281_SMOKE=1 runs so they can never overwrite
+# the published figures/ and results/ at the repo root.
+.smoke/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

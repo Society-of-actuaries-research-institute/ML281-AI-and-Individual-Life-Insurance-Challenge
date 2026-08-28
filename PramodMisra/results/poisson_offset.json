@@ -1,0 +1,17 @@
+{
+  "exposure_offset": {
+    "AE_model": 1.0196,
+    "best_iter": 469,
+    "model": "Poisson + exposure offset",
+    "test_RMSE": 0.4048,
+    "test_poisson_dev": 0.1523
+  },
+  "submitted_squared_error_deviance": 0.1786,
+  "vbt_offset": {
+    "AE_model": 0.9936,
+    "best_iter": 181,
+    "model": "Poisson + VBT offset (A/E model)",
+    "test_RMSE": 0.4033,
+    "test_poisson_dev": 0.1507
+  }
+}

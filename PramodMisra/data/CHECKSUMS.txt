@@ -1,0 +1,13 @@
+# SHA-256 checksums for the ML281 input data.
+#
+# Both files are served from the public Hugging Face dataset
+#   https://huggingface.co/datasets/pramodmisra/soa-ml281-sample
+# and download without an account or token.
+#
+# Verified 2026-08-24: the HF copies are byte-identical to the files used to
+# produce the published figures and results.
+#
+# Format: <sha256>  <path relative to the repository root>
+
+9bcd09b4ef7b25e8c5a9dfe8a6723502b1cd5541af2b8c5b49a5d004793c2e9a  data/soa_sample.parquet
+3a2e9b2e14758210d50a00cff23eceb3b909ed255852311f0cc443e1db41100f  data/full_table_ae.json

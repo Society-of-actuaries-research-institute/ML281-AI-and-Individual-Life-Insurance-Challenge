@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+title: >-
+  AI and Individual Life Insurance: ML281 Challenge Submission
+  (reproduction code)
+message: >-
+  If you use this code or its results, please cite it, and cite the
+  Society of Actuaries publication of the submission report.
+type: software
+authors:
+  - given-names: Pramod
+    family-names: Misra
+    email: pmisra30@gatech.edu
+    affiliation: Independent Researcher, Georgia Institute of Technology, Atlanta
+repository-code: >-
+  https://github.com/Society-of-actuaries-research-institute/ML281-AI-and-Individual-Life-Insurance-Challenge-Pramod-Misra
+abstract: >-
+  Reproduction code for the Society of Actuaries ML281 AI and Individual Life
+  Insurance Challenge submission, selected for publication following review
+  committee comment and a revised resubmission. Using the SOA Individual Life
+  Experience Committee (ILEC) 2012-2019 experience study, the work tests whether
+  machine learning improves on the VBT 2015 mortality table for individual life
+  insurance. It finds that out of time the static table forecasts better than the
+  machine-learned models tested; that a gradient-boosted model is not merely
+  relearning the table; that differences between model classes sit inside
+  fold-to-fold noise; and that formulating the problem as a count model with a VBT
+  log-offset gives the best-calibrated result. The repository contains the
+  analysis notebook, the verified data path, the published figures, and a numeric
+  ledger tying every reported value to the file that produced it.
+keywords:
+  - actuarial science
+  - mortality modelling
+  - life insurance
+  - machine learning
+  - gradient boosting
+  - reproducible research
+  - ILEC
+  - VBT 2015
+license: GPL-3.0-or-later
+version: 1.0.0
+date-released: "2026-08-24"

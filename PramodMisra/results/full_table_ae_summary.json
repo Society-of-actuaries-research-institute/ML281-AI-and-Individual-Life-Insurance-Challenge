@@ -1,0 +1,11 @@
+{
+  "overall_ae": 1.0764,
+  "segments": {
+    "Observation_Year": 8,
+    "Sex": 2,
+    "Smoker_Status": 3,
+    "age_band": 6
+  },
+  "total_deaths": 4552008.0,
+  "total_expected_vbt2015wmi": 4229014.718871893
+}

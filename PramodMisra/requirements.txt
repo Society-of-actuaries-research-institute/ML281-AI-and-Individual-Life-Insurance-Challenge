@@ -1,0 +1,39 @@
+# Reference environment for the SOA ML281 reproduction notebook.
+#
+# These are the exact versions that produced the figures in figures/ and the
+# numbers in results/ (Python 3.11.9, Windows 11; see results/environment.json
+# for the full record of any run).
+#
+#   python -m venv .venv
+#   .venv\Scripts\Activate.ps1        # Windows
+#   source .venv/bin/activate         # macOS / Linux
+#   pip install -r requirements.txt
+#
+# Tree-ensemble and SHAP output are not guaranteed bit-identical across library
+# versions or platforms. The notebook records the resolved versions and prints a
+# warning when they differ from this set.
+
+# --- core numerics ---
+numpy==2.4.2
+pandas==2.3.3
+scipy==1.17.0
+pyarrow==23.0.1
+
+# --- modelling ---
+scikit-learn==1.8.0
+xgboost==3.2.0
+shap==0.51.0
+
+# --- figures ---
+matplotlib==3.10.8
+
+# --- notebook execution (also used by CI) ---
+jupyter-core==5.9.1
+nbformat==5.10.4
+nbconvert==7.17.0
+nbclient==0.10.4
+ipykernel==7.2.0
+ipython==9.10.0
+
+# --- tests ---
+pytest==9.0.2

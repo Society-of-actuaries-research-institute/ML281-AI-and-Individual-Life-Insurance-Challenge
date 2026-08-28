@@ -1,0 +1,30 @@
+{
+  "ae_poisson_vbt_offset": 0.9596,
+  "ae_vbt_static": 1.0231,
+  "ae_xgboost_anchored": 0.9217,
+  "ae_xgboost_no_vbt": 0.8973,
+  "table": [
+    {
+      "OOT_A/E": 1.0231,
+      "model": "VBT2015 (static)",
+      "|A/E-1|": 0.0231
+    },
+    {
+      "OOT_A/E": 0.9596,
+      "model": "Poisson VBT-offset",
+      "|A/E-1|": 0.0404
+    },
+    {
+      "OOT_A/E": 0.9217,
+      "model": "XGBoost (anchored)",
+      "|A/E-1|": 0.0783
+    },
+    {
+      "OOT_A/E": 0.8973,
+      "model": "XGBoost (no VBT)",
+      "|A/E-1|": 0.1027
+    }
+  ],
+  "test_cells": 44902,
+  "train_cells": 87020
+}

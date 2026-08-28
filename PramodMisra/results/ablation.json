@@ -1,0 +1,27 @@
+{
+  "test_r2_with_vbt": 0.7591,
+  "test_r2_without_vbt": 0.7746,
+  "with_vbt": {
+    "AE_VBT": 1.0961,
+    "AE_model": 1.0505,
+    "model": "anchored (with VBT)",
+    "test_R2": 0.7591,
+    "test_RMSE": 0.6998,
+    "train_R2": 0.977,
+    "train_RMSE": 0.1987,
+    "val_R2": 0.8571,
+    "val_RMSE": 0.59
+  },
+  "without_vbt": {
+    "AE_VBT": 1.0961,
+    "AE_model": 1.0312,
+    "model": "un-anchored (no VBT)",
+    "test_MAE": 0.0857,
+    "test_R2": 0.7746,
+    "test_RMSE": 0.677,
+    "train_R2": 0.9757,
+    "train_RMSE": 0.2045,
+    "val_R2": 0.8633,
+    "val_RMSE": 0.5771
+  }
+}

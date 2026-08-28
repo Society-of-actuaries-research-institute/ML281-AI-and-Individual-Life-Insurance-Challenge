@@ -1,0 +1,43 @@
+{
+  "input_file": "soa_sample.parquet",
+  "input_sha256": "9bcd09b4ef7b25e8c5a9dfe8a6723502b1cd5541af2b8c5b49a5d004793c2e9a",
+  "knobs": {
+    "folds": 5,
+    "mlp_iter": 500,
+    "n_est": 300,
+    "oot_rounds": 300,
+    "reg_rounds": 2000,
+    "rf_est": 200,
+    "shap_n": 2000,
+    "sims": 2500
+  },
+  "n_cells": 131922,
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.9",
+  "reference_versions": {
+    "numpy": "2.4.2",
+    "pandas": "2.3.3",
+    "pyarrow": "23.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.0",
+    "shap": "0.51.0",
+    "xgboost": "3.2.0"
+  },
+  "resolved_versions": {
+    "numpy": "2.4.2",
+    "pandas": "2.3.3",
+    "pyarrow": "23.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.0",
+    "shap": "0.51.0",
+    "xgboost": "3.2.0"
+  },
+  "seed": 42,
+  "smoke_mode": false,
+  "split_sizes": {
+    "test": 26385,
+    "train": 79153,
+    "val": 26384
+  },
+  "version_drift": {}
+}
