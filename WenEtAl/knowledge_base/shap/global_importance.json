@@ -1,0 +1,74 @@
+{
+  "description": "Global SHAP feature importance for mortality prediction model",
+  "base_value": -6.045327,
+  "base_value_interpretation": "Average predicted mortality rate: -6.045327",
+  "sample_size": 455010,
+  "feature_importance": [
+    {
+      "feature": "Attained_Age",
+      "rank": 1,
+      "mean_abs_shap": 0.968715,
+      "pct_contribution": 40.37
+    },
+    {
+      "feature": "Duration",
+      "rank": 2,
+      "mean_abs_shap": 0.32093,
+      "pct_contribution": 13.37
+    },
+    {
+      "feature": "Smoker_Status",
+      "rank": 3,
+      "mean_abs_shap": 0.272664,
+      "pct_contribution": 11.36
+    },
+    {
+      "feature": "Face_Amount_Band",
+      "rank": 4,
+      "mean_abs_shap": 0.218231,
+      "pct_contribution": 9.09
+    },
+    {
+      "feature": "Sex",
+      "rank": 5,
+      "mean_abs_shap": 0.199586,
+      "pct_contribution": 8.32
+    },
+    {
+      "feature": "Issue_Age",
+      "rank": 6,
+      "mean_abs_shap": 0.171278,
+      "pct_contribution": 7.14
+    },
+    {
+      "feature": "Preferred_Class",
+      "rank": 7,
+      "mean_abs_shap": 0.122711,
+      "pct_contribution": 5.11
+    },
+    {
+      "feature": "SOA_Post_Lvl_Ind",
+      "rank": 8,
+      "mean_abs_shap": 0.042709,
+      "pct_contribution": 1.78
+    },
+    {
+      "feature": "Insurance_Plan",
+      "rank": 9,
+      "mean_abs_shap": 0.036475,
+      "pct_contribution": 1.52
+    },
+    {
+      "feature": "SOA_Antp_Lvl_TP",
+      "rank": 10,
+      "mean_abs_shap": 0.026366,
+      "pct_contribution": 1.1
+    },
+    {
+      "feature": "SOA_Guar_Lvl_TP",
+      "rank": 11,
+      "mean_abs_shap": 0.020065,
+      "pct_contribution": 0.84
+    }
+  ]
+}

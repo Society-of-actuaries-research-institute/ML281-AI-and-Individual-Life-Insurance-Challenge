@@ -1,0 +1,29 @@
+{
+  "segment_id": "SPOT_382",
+  "rule_list": [
+    "Duration > 17.5",
+    "Face Amount Band > 250,000 - 499,999",
+    "48.5 < Attained_Age <= 51.5",
+    "Issue_Age > 27.5",
+    "Sex is Female",
+    "SOA Antp 20 yr anticipated is Yes"
+  ],
+  "rule_text": "Duration > 17.5 AND Face Amount Band > 250,000 - 499,999 AND 48.5 < Attained_Age <= 51.5 AND Issue_Age > 27.5 AND Sex is Female AND SOA Antp 20 yr anticipated is Yes",
+  "statistics": {
+    "exposure": 11661,
+    "actual_deaths": 3,
+    "expected_deaths": 10.953,
+    "ae_ratio": 0.274,
+    "credibility_score": 1.0,
+    "stability": {
+      "year_col": "Observation_Year",
+      "years_analyzed": 8,
+      "anomaly_years": 8,
+      "direction": "Under",
+      "direction_consistency": 0.891,
+      "persistence": 1.0,
+      "stability_score": 0.364,
+      "log_ae_sd": 1.012
+    }
+  }
+}

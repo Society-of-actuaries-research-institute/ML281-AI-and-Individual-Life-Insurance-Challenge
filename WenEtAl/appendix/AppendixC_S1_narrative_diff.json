@@ -1,0 +1,51 @@
+{
+  "status": "diff_computed",
+  "lines_added": 44,
+  "lines_removed": 64,
+  "sample_added": [
+    "- year_factors: {'2012': 0.9736, '2013': 0.9825, '2014': 1.0036, '2015': 0.9953, '2016': 0.9846, '2017': 1.0082, '2018': 1.0041, '2019': 0.9859}",
+    "## 7. Disclaimers",
+    "# Validation Diagnostic Report",
+    "- Overall A/E: 0.9989",
+    "- Model: LGBM Offset Poisson Mortality Model"
+  ],
+  "sample_removed": [
+    "- **Issue_Age** (0): An issue age of 0 is associated with lower mortality rates.",
+    "| Credibility | high |",
+    "> **Note**: Spotlight segments identify statistically anomalous risk groups. This is an **additional warning**, not a contradiction to the Coverage segment.",
+    "- Insurance_Plan=Perm (16.1% of population)",
+    "| Metric | Value | Description |"
+  ],
+  "numbers_added": [
+    -2.5,
+    0.1,
+    0.95,
+    0.9736,
+    0.9825,
+    0.9846,
+    0.9859,
+    0.9881,
+    0.9885,
+    0.9906
+  ],
+  "numbers_removed": [
+    -1.2363,
+    -0.3323,
+    -0.2913,
+    0.000691,
+    0.0098,
+    0.243,
+    0.6428,
+    1.0,
+    1.008,
+    3.1
+  ],
+  "causal_language_added": [],
+  "causal_language_removed": [],
+  "disclaimer_changes": {
+    "asop": "removed",
+    "historical data": "removed",
+    "reference only": "removed"
+  },
+  "risk_level_changed": true
+}

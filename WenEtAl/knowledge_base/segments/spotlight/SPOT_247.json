@@ -1,0 +1,31 @@
+{
+  "segment_id": "SPOT_247",
+  "rule_list": [
+    "Duration > 17.5",
+    "Face Amount Band <= 100,000 - 249,999",
+    "Attained_Age <= 49.5",
+    "Insurance Plan is NOT Perm",
+    "Insurance Plan is NOT UL",
+    "SOA Guar 20 yr guaranteed is Yes",
+    "Issue_Age > 23.5",
+    "Preferred Class is NOT 2"
+  ],
+  "rule_text": "Duration > 17.5 AND Face Amount Band <= 100,000 - 249,999 AND Attained_Age <= 49.5 AND Insurance Plan is NOT Perm AND Insurance Plan is NOT UL AND SOA Guar 20 yr guaranteed is Yes AND Issue_Age > 23.5 AND Preferred Class is NOT 2",
+  "statistics": {
+    "exposure": 30292,
+    "actual_deaths": 56,
+    "expected_deaths": 47.342,
+    "ae_ratio": 1.183,
+    "credibility_score": 1.0,
+    "stability": {
+      "year_col": "Observation_Year",
+      "years_analyzed": 8,
+      "anomaly_years": 6,
+      "direction": "Mixed",
+      "direction_consistency": 0.016,
+      "persistence": 0.722,
+      "stability_score": 0.592,
+      "log_ae_sd": 0.525
+    }
+  }
+}

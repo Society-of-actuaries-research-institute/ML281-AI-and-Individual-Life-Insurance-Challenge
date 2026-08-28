@@ -1,0 +1,34 @@
+# AI-Assisted Actuarial Intelligence Framework for Mortality Analysis
+# Python 3.10+ recommended (developed on 3.10/3.12)
+# Versions pinned from the original development environment.
+
+# --- Core data / modeling ---
+pandas==2.2.2
+numpy==2.1.3
+lightgbm==4.6.0
+scikit-learn==1.8.0
+pyarrow==22.0.0
+joblib==1.4.0
+shap==0.45.1
+
+# --- Visualization (chart_generators, knowledge_generators) ---
+matplotlib==3.8.4
+seaborn==0.13.2
+
+# --- Trend-pack chart generation (chart_generators/generate_charts_tested.py) ---
+polars>=1.0
+duckdb>=1.0
+
+# --- Report generation pipeline (report_generator/) ---
+pydantic==2.11.10
+langchain-google-genai==2.1.12
+langchain-core==0.3.78
+python-dotenv==1.1.1
+tenacity==9.1.2
+
+# --- Report rendering (tools/md_to_report.py, renderer.py) ---
+Markdown>=3.4
+
+# --- Optional ---
+# weasyprint>=60        # only needed for PDF export in renderer.py (falls back gracefully)
+# anthropic>=0.40       # only needed if LLM_BACKEND=claude (default backend is Gemini)

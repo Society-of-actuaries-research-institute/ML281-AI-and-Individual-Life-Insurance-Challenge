@@ -1,0 +1,29 @@
+{
+  "segment_id": "SPOT_072",
+  "rule_list": [
+    "Duration <= 17.5",
+    "Attained_Age <= 48.5",
+    "Face Amount Band: 100,000 - 249,999",
+    "SOA Guar 20 yr guaranteed is No",
+    "SOA Post ULT is Yes",
+    "Preferred Class is 1"
+  ],
+  "rule_text": "Duration <= 17.5 AND Attained_Age <= 48.5 AND Face Amount Band: 100,000 - 249,999 AND SOA Guar 20 yr guaranteed is No AND SOA Post ULT is Yes AND Preferred Class is 1",
+  "statistics": {
+    "exposure": 96046,
+    "actual_deaths": 24,
+    "expected_deaths": 33.224,
+    "ae_ratio": 0.722,
+    "credibility_score": 1.0,
+    "stability": {
+      "year_col": "Observation_Year",
+      "years_analyzed": 8,
+      "anomaly_years": 7,
+      "direction": "Under",
+      "direction_consistency": 0.207,
+      "persistence": 0.856,
+      "stability_score": 0.445,
+      "log_ae_sd": 0.809
+    }
+  }
+}

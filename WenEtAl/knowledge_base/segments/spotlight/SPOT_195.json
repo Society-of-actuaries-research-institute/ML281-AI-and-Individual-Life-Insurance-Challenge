@@ -1,0 +1,29 @@
+{
+  "segment_id": "SPOT_195",
+  "rule_list": [
+    "1.5 < Duration <= 6.5",
+    "Attained_Age > 48.5",
+    "SOA Guar 20 yr guaranteed is Yes",
+    "Preferred Class is 1",
+    "Sex is Female",
+    "Issue_Age > 54.5"
+  ],
+  "rule_text": "1.5 < Duration <= 6.5 AND Attained_Age > 48.5 AND SOA Guar 20 yr guaranteed is Yes AND Preferred Class is 1 AND Sex is Female AND Issue_Age > 54.5",
+  "statistics": {
+    "exposure": 27595,
+    "actual_deaths": 25,
+    "expected_deaths": 33.92,
+    "ae_ratio": 0.737,
+    "credibility_score": 1.0,
+    "stability": {
+      "year_col": "Observation_Year",
+      "years_analyzed": 8,
+      "anomaly_years": 7,
+      "direction": "Under",
+      "direction_consistency": 0.509,
+      "persistence": 0.837,
+      "stability_score": 0.497,
+      "log_ae_sd": 0.699
+    }
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "description": "Local SHAP examples for typical cases",
+  "base_value": -6.045327,
+  "examples": [
+    {
+      "case_type": "high_risk",
+      "input": {
+        "Attained_Age": 81,
+        "Issue_Age": 49,
+        "Duration": 33,
+        "Sex": "F",
+        "Smoker_Status": "S",
+        "Insurance_Plan": "Perm",
+        "Face_Amount_Band": "03: 25,000 - 49,999",
+        "Preferred_Class": "NA",
+        "SOA_Post_Lvl_Ind": "NA",
+        "SOA_Antp_Lvl_TP": "N/A (Not Term)",
+        "SOA_Guar_Lvl_TP": "N/A (Not Term)"
+      },
+      "prediction": 0.065406,
+      "base_value": -6.045327,
+      "shap_breakdown": [
+        {
+          "feature": "Attained_Age",
+          "value": "81",
+          "shap_value": 2.168296,
+          "direction": "increases"
+        },
+        {
+          "feature": "Smoker_Status",
+          "value": "S",
+          "shap_value": 0.583665,
+          "direction": "increases"
+        },
+        {
+          "feature": "Duration",
+          "value": "33",
+          "shap_value": 0.457825,
+          "direction": "increases"
+        },
+        {
+          "feature": "Sex",
+          "value": "F",
+          "shap_value": -0.200012,
+          "direction": "decreases"
+        },
+        {
+          "feature": "Issue_Age",
+          "value": "49",
+          "shap_value": 0.199063,
+          "direction": "increases"
+        },
+        {
+          "feature": "Face_Amount_Band",
+          "value": "03: 25,000 - 49,999",
+          "shap_value": 0.159781,
+          "direction": "increases"
+        },
+        {
+          "feature": "Insurance_Plan",
+          "value": "Perm",
+          "shap_value": -0.048611,
+          "direction": "decreases"
+        },
+        {
+          "feature": "Preferred_Class",
+          "value": "NA",
+          "shap_value": 0.043153,
+          "direction": "increases"
+        },
+        {
+          "feature": "SOA_Antp_Lvl_TP",
+          "value": "N/A (Not Term)",
+          "shap_value": -0.0162,
+          "direction": "decreases"
+        },
+        {
+          "feature": "SOA_Post_Lvl_Ind",
+          "value": "NA",
+          "shap_value": -0.015652,
+          "direction": "decreases"
+        },
+        {
+          "feature": "SOA_Guar_Lvl_TP",
+          "value": "N/A (Not Term)",
+          "shap_value": -0.013119,
+          "direction": "decreases"
+        }
+      ],
+      "top_drivers": [
+        {
+          "feature": "Attained_Age",
+          "value": "81",
+          "shap_value": 2.168296,
+          "direction": "increases"
+        },
+        {
+          "feature": "Smoker_Status",
+          "value": "S",
+          "shap_value": 0.583665,
+          "direction": "increases"
+        },
+        {
+          "feature": "Duration",
+          "value": "33",
+          "shap_value": 0.457825,
+          "direction": "increases"
+        }
+      ],
+      "explanation": "Predicted mortality rate: 0.065406. Main drivers: Attained_Age (increases risk), Smoker_Status (increases risk)."
+    },
+    {
+      "case_type": "low_risk",
+      "input": {
+        "Attained_Age": 30,
+        "Issue_Age": 26,
+        "Duration": 5,
+        "Sex": "F",
+        "Smoker_Status": "NS",
+        "Insurance_Plan": "Term",
+        "Face_Amount_Band": "06: 250,000 - 499,999",
+        "Preferred_Class": "1",
+        "SOA_Post_Lvl_Ind": "ULT",
+        "SOA_Antp_Lvl_TP": "Unknown",
+        "SOA_Guar_Lvl_TP": "Unknown"
+      },
+      "prediction": 0.000176,
+      "base_value": -6.045327,
+      "shap_breakdown": [
+        {
+          "feature": "Attained_Age",
+          "value": "30",
+          "shap_value": -1.354441,
+          "direction": "decreases"
+        },
+        {
+          "feature": "Preferred_Class",
+          "value": "1",
+          "shap_value": -0.304177,
+          "direction": "decreases"
+        },
+        {
+          "feature": "Sex",
+          "value": "F",
+          "shap_value": -0.238507,
+          "direction": "decreases"
+        },
+        {
+          "feature": "Duration",
+          "value": "5",
+          "shap_value": -0.220975,
+          "direction": "decreases"
+        },
+        {
+          "feature": "Issue_Age",
+          "value": "26",
+          "shap_value": -0.199897,
+          "direction": "decreases"
+        },
+        {
+          "feature": "Smoker_Status",
+          "value": "NS",
+          "shap_value": -0.169128,
+          "direction": "decreases"
+        },
+        {
+          "feature": "Face_Amount_Band",
+          "value": "06: 250,000 - 499,999",
+          "shap_value": -0.164699,
+          "direction": "decreases"
+        },
+        {
+          "feature": "SOA_Post_Lvl_Ind",
+          "value": "ULT",
+          "shap_value": 0.033717,
+          "direction": "increases"
+        },
+        {
+          "feature": "SOA_Antp_Lvl_TP",
+          "value": "Unknown",
+          "shap_value": 0.018719,
+          "direction": "increases"
+        },
+        {
+          "feature": "SOA_Guar_Lvl_TP",
+          "value": "Unknown",
+          "shap_value": -0.008775,
+          "direction": "decreases"
+        },
+        {
+          "feature": "Insurance_Plan",
+          "value": "Term",
+          "shap_value": 0.008137,
+          "direction": "increases"
+        }
+      ],
+      "top_drivers": [
+        {
+          "feature": "Attained_Age",
+          "value": "30",
+          "shap_value": -1.354441,
+          "direction": "decreases"
+        },
+        {
+          "feature": "Preferred_Class",
+          "value": "1",
+          "shap_value": -0.304177,
+          "direction": "decreases"
+        },
+        {
+          "feature": "Sex",
+          "value": "F",
+          "shap_value": -0.238507,
+          "direction": "decreases"
+        }
+      ],
+      "explanation": "Predicted mortality rate: 0.000176. Main drivers: Attained_Age (decreases risk), Preferred_Class (decreases risk)."
+    },
+    {
+      "case_type": "average",
+      "input": {
+        "Attained_Age": 51,
+        "Issue_Age": 47,
+        "Duration": 5,
+        "Sex": "F",
+        "Smoker_Status": "NS",
+        "Insurance_Plan": "VLSG",
+        "Face_Amount_Band": "07: 500,000 - 999,999",
+        "Preferred_Class": "2.0",
+        "SOA_Post_Lvl_Ind": "NA",
+        "SOA_Antp_Lvl_TP": "N/A (Not Term)",
+        "SOA_Guar_Lvl_TP": "N/A (Not Term)"
+      },
+      "prediction": 0.000664,
+      "base_value": -6.045327,
+      "shap_breakdown": [
+        {
+          "feature": "Attained_Age",
+          "value": "51",
+          "shap_value": -0.342452,
+          "direction": "decreases"
+        },
+        {
+          "feature": "Face_Amount_Band",
+          "value": "07: 500,000 - 999,999",
+          "shap_value": -0.28236,
+          "direction": "decreases"
+        },
+        {
+          "feature": "Duration",
+          "value": "5",
+          "shap_value": -0.275583,
+          "direction": "decreases"
+        },
+        {
+          "feature": "Smoker_Status",
+          "value": "NS",
+          "shap_value": -0.189556,
+          "direction": "decreases"
+        },
+        {
+          "feature": "Sex",
+          "value": "F",
+          "shap_value": -0.165717,
+          "direction": "decreases"
+        },
+        {
+          "feature": "Insurance_Plan",
+          "value": "VLSG",
+          "shap_value": -0.105335,
+          "direction": "decreases"
+        },
+        {
+          "feature": "Preferred_Class",
+          "value": "2.0",
+          "shap_value": 0.090366,
+          "direction": "increases"
+        },
+        {
+          "feature": "Issue_Age",
+          "value": "47",
+          "shap_value": 0.038562,
+          "direction": "increases"
+        },
+        {
+          "feature": "SOA_Antp_Lvl_TP",
+          "value": "N/A (Not Term)",
+          "shap_value": -0.017847,
+          "direction": "decreases"
+        },
+        {
+          "feature": "SOA_Post_Lvl_Ind",
+          "value": "NA",
+          "shap_value": -0.012655,
+          "direction": "decreases"
+        },
+        {
+          "feature": "SOA_Guar_Lvl_TP",
+          "value": "N/A (Not Term)",
+          "shap_value": -0.009417,
+          "direction": "decreases"
+        }
+      ],
+      "top_drivers": [
+        {
+          "feature": "Attained_Age",
+          "value": "51",
+          "shap_value": -0.342452,
+          "direction": "decreases"
+        },
+        {
+          "feature": "Face_Amount_Band",
+          "value": "07: 500,000 - 999,999",
+          "shap_value": -0.28236,
+          "direction": "decreases"
+        },
+        {
+          "feature": "Duration",
+          "value": "5",
+          "shap_value": -0.275583,
+          "direction": "decreases"
+        }
+      ],
+      "explanation": "Predicted mortality rate: 0.000664. Main drivers: Attained_Age (decreases risk), Face_Amount_Band (decreases risk)."
+    }
+  ]
+}

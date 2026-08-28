@@ -1,0 +1,54 @@
+{
+  "by_year": {
+    "2012": {
+      "ae_ratio": 0.9906,
+      "actual_deaths": 537286,
+      "expected_deaths": 542358.0
+    },
+    "2013": {
+      "ae_ratio": 0.9949,
+      "actual_deaths": 554199,
+      "expected_deaths": 557019.0
+    },
+    "2014": {
+      "ae_ratio": 0.9963,
+      "actual_deaths": 560393,
+      "expected_deaths": 562487.0
+    },
+    "2015": {
+      "ae_ratio": 1.0085,
+      "actual_deaths": 565853,
+      "expected_deaths": 561111.0
+    },
+    "2016": {
+      "ae_ratio": 0.9881,
+      "actual_deaths": 552127,
+      "expected_deaths": 558768.0
+    },
+    "2017": {
+      "ae_ratio": 1.0061,
+      "actual_deaths": 558579,
+      "expected_deaths": 555209.0
+    },
+    "2018": {
+      "ae_ratio": 1.0169,
+      "actual_deaths": 624284,
+      "expected_deaths": 613935.0
+    },
+    "2019": {
+      "ae_ratio": 0.9885,
+      "actual_deaths": 599288,
+      "expected_deaths": 606254.0
+    }
+  },
+  "year_factors": {
+    "2012": 0.9736,
+    "2013": 0.9825,
+    "2014": 1.0036,
+    "2015": 0.9953,
+    "2016": 0.9846,
+    "2017": 1.0082,
+    "2018": 1.0041,
+    "2019": 0.9859
+  }
+}

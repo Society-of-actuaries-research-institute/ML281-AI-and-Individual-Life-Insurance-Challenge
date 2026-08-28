@@ -1,0 +1,1247 @@
+{
+  "layer": "B",
+  "overall_rate": 0.009666,
+  "statistics": {
+    "total_exposure": 46508986,
+    "ae_anomaly_exposure": 2450241,
+    "ae_anomaly_exposure_ratio": 0.05268317395696393,
+    "total_anomaly_count": 69,
+    "anomaly_count": 69,
+    "anomaly_count_ratio": 0.3039647577092511
+  },
+  "anomalies": [
+    {
+      "segment_id": "SPOT_364",
+      "rule_list": [
+        "Duration > 27.5",
+        "Face Amount Band > 250,000 - 499,999",
+        "Attained_Age <= 32.5",
+        "Issue_Age <= 27.5"
+      ],
+      "statistics": {
+        "exposure": 4095,
+        "actual_deaths": 7,
+        "expected_deaths": 3.065,
+        "ae_ratio": 2.284,
+        "credibility": 0.905
+      }
+    },
+    {
+      "segment_id": "SPOT_376",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band > 250,000 - 499,999",
+        "Attained_Age <= 48.5",
+        "Issue_Age > 27.5",
+        "Sex is Female",
+        "SOA Post WLT is No",
+        "Preferred Class is 1"
+      ],
+      "statistics": {
+        "exposure": 4491,
+        "actual_deaths": 0,
+        "expected_deaths": 3.334,
+        "ae_ratio": 0.0,
+        "credibility": 0.948
+      }
+    },
+    {
+      "segment_id": "SPOT_182",
+      "rule_list": [
+        "Duration <= 1.5",
+        "48.5 < Attained_Age <= 55.5",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "Face Amount Band > 1,000,000 - 2,499,999"
+      ],
+      "statistics": {
+        "exposure": 9919,
+        "actual_deaths": 6,
+        "expected_deaths": 3.327,
+        "ae_ratio": 1.803,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_377",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band > 250,000 - 499,999",
+        "Attained_Age <= 48.5",
+        "Issue_Age > 27.5",
+        "Sex is Female",
+        "SOA Post WLT is Yes"
+      ],
+      "statistics": {
+        "exposure": 12851,
+        "actual_deaths": 18,
+        "expected_deaths": 10.204,
+        "ae_ratio": 1.764,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_382",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band > 250,000 - 499,999",
+        "48.5 < Attained_Age <= 51.5",
+        "Issue_Age > 27.5",
+        "Sex is Female",
+        "SOA Antp 20 yr anticipated is Yes"
+      ],
+      "statistics": {
+        "exposure": 11661,
+        "actual_deaths": 3,
+        "expected_deaths": 10.953,
+        "ae_ratio": 0.274,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_367",
+      "rule_list": [
+        "Duration > 27.5",
+        "Face Amount Band > 250,000 - 499,999",
+        "32.5 < Attained_Age <= 49.5",
+        "12.5 < Issue_Age <= 27.5"
+      ],
+      "statistics": {
+        "exposure": 4033,
+        "actual_deaths": 13,
+        "expected_deaths": 7.326,
+        "ae_ratio": 1.774,
+        "credibility": 0.898
+      }
+    },
+    {
+      "segment_id": "SPOT_177",
+      "rule_list": [
+        "Duration <= 1.5",
+        "Attained_Age > 58.5",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "Face Amount Band <= 500,000 - 999,999",
+        "Sex is Female"
+      ],
+      "statistics": {
+        "exposure": 8843,
+        "actual_deaths": 13,
+        "expected_deaths": 7.708,
+        "ae_ratio": 1.686,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_444",
+      "rule_list": [
+        "Duration > 21.5",
+        "Face Amount Band: 500,000 - 999,999",
+        "51.5 < Attained_Age <= 54.5",
+        "Sex is Male"
+      ],
+      "statistics": {
+        "exposure": 5586,
+        "actual_deaths": 19,
+        "expected_deaths": 11.557,
+        "ae_ratio": 1.644,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_229",
+      "rule_list": [
+        "14.5 < Duration <= 17.5",
+        "Attained_Age > 48.5",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "Face Amount Band > 2,500,000 - 4,999,999",
+        "Sex is Male"
+      ],
+      "statistics": {
+        "exposure": 3923,
+        "actual_deaths": 17,
+        "expected_deaths": 10.011,
+        "ae_ratio": 1.698,
+        "credibility": 0.886
+      }
+    },
+    {
+      "segment_id": "SPOT_431",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band: 250,000 - 499,999",
+        "Attained_Age > 51.5",
+        "Sex is Male",
+        "Preferred Class is NOT 1",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "Issue_Age <= 36.5"
+      ],
+      "statistics": {
+        "exposure": 9867,
+        "actual_deaths": 42,
+        "expected_deaths": 26.497,
+        "ae_ratio": 1.585,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_380",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band > 250,000 - 499,999",
+        "48.5 < Attained_Age <= 51.5",
+        "Issue_Age > 27.5",
+        "Sex is Female",
+        "SOA Antp 20 yr anticipated is No",
+        "Preferred Class is NOT 1"
+      ],
+      "statistics": {
+        "exposure": 12196,
+        "actual_deaths": 6,
+        "expected_deaths": 14.43,
+        "ae_ratio": 0.416,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_017",
+      "rule_list": [
+        "Duration <= 14.5",
+        "19.5 < Attained_Age <= 48.5",
+        "Face Amount Band <= 25,000 - 49,999",
+        "Insurance Plan is NOT Perm",
+        "Issue_Age > 25.5",
+        "Insurance Plan is UL"
+      ],
+      "statistics": {
+        "exposure": 26794,
+        "actual_deaths": 66,
+        "expected_deaths": 42.704,
+        "ae_ratio": 1.546,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_366",
+      "rule_list": [
+        "Duration > 27.5",
+        "Face Amount Band > 250,000 - 499,999",
+        "32.5 < Attained_Age <= 49.5",
+        "Issue_Age <= 12.5"
+      ],
+      "statistics": {
+        "exposure": 5891,
+        "actual_deaths": 3,
+        "expected_deaths": 6.127,
+        "ae_ratio": 0.49,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_245",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band <= 100,000 - 249,999",
+        "Attained_Age <= 49.5",
+        "Insurance Plan is NOT Perm",
+        "Insurance Plan is NOT UL",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "Issue_Age <= 23.5",
+        "Sex is Male"
+      ],
+      "statistics": {
+        "exposure": 6265,
+        "actual_deaths": 24,
+        "expected_deaths": 16.137,
+        "ae_ratio": 1.487,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_442",
+      "rule_list": [
+        "17.5 < Duration <= 21.5",
+        "Face Amount Band > 500,000 - 999,999",
+        "53.5 < Attained_Age <= 54.5",
+        "Sex is Male"
+      ],
+      "statistics": {
+        "exposure": 10129,
+        "actual_deaths": 9,
+        "expected_deaths": 17.293,
+        "ae_ratio": 0.52,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_370",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band > 250,000 - 499,999",
+        "49.5 < Attained_Age <= 51.5",
+        "Issue_Age <= 27.5",
+        "Sex is Male"
+      ],
+      "statistics": {
+        "exposure": 5448,
+        "actual_deaths": 16,
+        "expected_deaths": 10.891,
+        "ae_ratio": 1.469,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_362",
+      "rule_list": [
+        "17.5 < Duration <= 27.5",
+        "Face Amount Band > 250,000 - 499,999",
+        "Attained_Age <= 49.5",
+        "26.5 < Issue_Age <= 27.5",
+        "SOA Antp N/A (Not Term) is Yes"
+      ],
+      "statistics": {
+        "exposure": 5348,
+        "actual_deaths": 9,
+        "expected_deaths": 6.128,
+        "ae_ratio": 1.469,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_369",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band > 250,000 - 499,999",
+        "49.5 < Attained_Age <= 51.5",
+        "Issue_Age <= 27.5",
+        "Sex is Female"
+      ],
+      "statistics": {
+        "exposure": 2264,
+        "actual_deaths": 1,
+        "expected_deaths": 3.213,
+        "ae_ratio": 0.311,
+        "credibility": 0.673
+      }
+    },
+    {
+      "segment_id": "SPOT_009",
+      "rule_list": [
+        "Duration <= 6.5",
+        "4.5 < Attained_Age <= 19.5",
+        "Face Amount Band <= 25,000 - 49,999",
+        "Insurance Plan is NOT Perm"
+      ],
+      "statistics": {
+        "exposure": 100375,
+        "actual_deaths": 11,
+        "expected_deaths": 20.058,
+        "ae_ratio": 0.548,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_244",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band <= 100,000 - 249,999",
+        "Attained_Age <= 49.5",
+        "Insurance Plan is NOT Perm",
+        "Insurance Plan is NOT UL",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "Issue_Age <= 23.5",
+        "Sex is Female"
+      ],
+      "statistics": {
+        "exposure": 7648,
+        "actual_deaths": 7,
+        "expected_deaths": 12.719,
+        "ae_ratio": 0.55,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_361",
+      "rule_list": [
+        "17.5 < Duration <= 27.5",
+        "Face Amount Band > 250,000 - 499,999",
+        "Attained_Age <= 49.5",
+        "26.5 < Issue_Age <= 27.5",
+        "SOA Antp N/A (Not Term) is No"
+      ],
+      "statistics": {
+        "exposure": 8650,
+        "actual_deaths": 5,
+        "expected_deaths": 8.494,
+        "ae_ratio": 0.589,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_252",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band <= 100,000 - 249,999",
+        "Attained_Age <= 46.5",
+        "Insurance Plan is NOT Perm",
+        "Insurance Plan is UL",
+        "Preferred Class is NOT U",
+        "Sex is Female"
+      ],
+      "statistics": {
+        "exposure": 21098,
+        "actual_deaths": 13,
+        "expected_deaths": 22.078,
+        "ae_ratio": 0.589,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_084",
+      "rule_list": [
+        "Duration <= 17.5",
+        "Attained_Age <= 40.5",
+        "Face Amount Band > 50,000 - 99,999",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "SOA Antp 20 yr anticipated is No",
+        "Issue_Age > 34.5"
+      ],
+      "statistics": {
+        "exposure": 42464,
+        "actual_deaths": 32,
+        "expected_deaths": 23.035,
+        "ae_ratio": 1.389,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_228",
+      "rule_list": [
+        "6.5 < Duration <= 14.5",
+        "Attained_Age > 48.5",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "Face Amount Band > 2,500,000 - 4,999,999",
+        "Sex is Male"
+      ],
+      "statistics": {
+        "exposure": 20734,
+        "actual_deaths": 45,
+        "expected_deaths": 32.432,
+        "ae_ratio": 1.388,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_014",
+      "rule_list": [
+        "Duration <= 14.5",
+        "19.5 < Attained_Age <= 48.5",
+        "Face Amount Band <= 25,000 - 49,999",
+        "Insurance Plan is NOT Perm",
+        "24.5 < Issue_Age <= 25.5"
+      ],
+      "statistics": {
+        "exposure": 29484,
+        "actual_deaths": 47,
+        "expected_deaths": 34.822,
+        "ae_ratio": 1.35,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_415",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band > 250,000 - 499,999",
+        "51.5 < Attained_Age <= 54.5",
+        "Sex is Female",
+        "SOA Post WLT is Yes",
+        "Preferred Class is NOT 1"
+      ],
+      "statistics": {
+        "exposure": 7782,
+        "actual_deaths": 7,
+        "expected_deaths": 10.76,
+        "ae_ratio": 0.651,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_059",
+      "rule_list": [
+        "Duration <= 17.5",
+        "Attained_Age <= 48.5",
+        "Face Amount Band: 50,000 - 99,999",
+        "SOA Guar 20 yr guaranteed is No",
+        "SOA Post ULT is Yes",
+        "Sex is Male",
+        "Issue_Age <= 20.5"
+      ],
+      "statistics": {
+        "exposure": 18781,
+        "actual_deaths": 30,
+        "expected_deaths": 22.428,
+        "ae_ratio": 1.338,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_348",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band <= 100,000 - 249,999",
+        "49.5 < Attained_Age <= 56.5",
+        "Preferred Class is U",
+        "SOA Post NA is Yes",
+        "Insurance Plan is ULSG",
+        "Sex is Male"
+      ],
+      "statistics": {
+        "exposure": 7189,
+        "actual_deaths": 38,
+        "expected_deaths": 28.443,
+        "ae_ratio": 1.336,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_197",
+      "rule_list": [
+        "1.5 < Duration <= 2.5",
+        "Attained_Age > 48.5",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "Preferred Class is 1",
+        "Sex is Male"
+      ],
+      "statistics": {
+        "exposure": 20500,
+        "actual_deaths": 10,
+        "expected_deaths": 14.984,
+        "ae_ratio": 0.667,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_275",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band <= 25,000 - 49,999",
+        "Attained_Age <= 42.5",
+        "Insurance Plan is Perm",
+        "Smoker Status is Known",
+        "Preferred Class is NOT U"
+      ],
+      "statistics": {
+        "exposure": 7964,
+        "actual_deaths": 8,
+        "expected_deaths": 11.861,
+        "ae_ratio": 0.674,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_387",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band > 500,000 - 999,999",
+        "Attained_Age <= 51.5",
+        "Issue_Age > 27.5",
+        "Sex is Male",
+        "Preferred Class is NOT U",
+        "SOA Post WLT is No"
+      ],
+      "statistics": {
+        "exposure": 8311,
+        "actual_deaths": 7,
+        "expected_deaths": 10.373,
+        "ae_ratio": 0.675,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_183",
+      "rule_list": [
+        "Duration <= 1.5",
+        "Attained_Age > 55.5",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "Face Amount Band > 1,000,000 - 2,499,999"
+      ],
+      "statistics": {
+        "exposure": 3178,
+        "actual_deaths": 1,
+        "expected_deaths": 1.67,
+        "ae_ratio": 0.599,
+        "credibility": 0.797
+      }
+    },
+    {
+      "segment_id": "SPOT_074",
+      "rule_list": [
+        "Duration <= 17.5",
+        "Attained_Age <= 48.5",
+        "Face Amount Band > 250,000 - 499,999",
+        "SOA Guar 20 yr guaranteed is No",
+        "SOA Post ULT is Yes",
+        "Issue_Age <= 30.5"
+      ],
+      "statistics": {
+        "exposure": 275884,
+        "actual_deaths": 53,
+        "expected_deaths": 77.651,
+        "ae_ratio": 0.683,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_451",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band > 500,000 - 999,999",
+        "54.5 < Attained_Age <= 56.5",
+        "Sex is Male",
+        "SOA Post WLT is Yes"
+      ],
+      "statistics": {
+        "exposure": 14540,
+        "actual_deaths": 32,
+        "expected_deaths": 24.326,
+        "ae_ratio": 1.315,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_248",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band <= 100,000 - 249,999",
+        "Attained_Age <= 49.5",
+        "Insurance Plan is NOT Perm",
+        "Insurance Plan is NOT UL",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "Issue_Age > 23.5",
+        "Preferred Class is 2"
+      ],
+      "statistics": {
+        "exposure": 35966,
+        "actual_deaths": 96,
+        "expected_deaths": 73.707,
+        "ae_ratio": 1.302,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_358",
+      "rule_list": [
+        "17.5 < Duration <= 22.5",
+        "Face Amount Band > 250,000 - 499,999",
+        "Attained_Age <= 49.5",
+        "Issue_Age <= 26.5"
+      ],
+      "statistics": {
+        "exposure": 52130,
+        "actual_deaths": 30,
+        "expected_deaths": 42.927,
+        "ae_ratio": 0.699,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_039",
+      "rule_list": [
+        "Duration <= 17.5",
+        "Attained_Age <= 48.5",
+        "Face Amount Band <= 25,000 - 49,999",
+        "Insurance Plan is Perm",
+        "0.5 < Issue_Age <= 12.5",
+        "Smoker Status is Known",
+        "Sex is Female"
+      ],
+      "statistics": {
+        "exposure": 106755,
+        "actual_deaths": 13,
+        "expected_deaths": 18.194,
+        "ae_ratio": 0.715,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_072",
+      "rule_list": [
+        "Duration <= 17.5",
+        "Attained_Age <= 48.5",
+        "Face Amount Band: 100,000 - 249,999",
+        "SOA Guar 20 yr guaranteed is No",
+        "SOA Post ULT is Yes",
+        "Preferred Class is 1"
+      ],
+      "statistics": {
+        "exposure": 96046,
+        "actual_deaths": 24,
+        "expected_deaths": 33.224,
+        "ae_ratio": 0.722,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_219",
+      "rule_list": [
+        "6.5 < Duration <= 17.5",
+        "Attained_Age > 48.5",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "Face Amount Band > 1,000,000 - 2,499,999",
+        "Sex is Female",
+        "Preferred Class is NOT 1",
+        "Preferred Class is 2"
+      ],
+      "statistics": {
+        "exposure": 11476,
+        "actual_deaths": 12,
+        "expected_deaths": 16.587,
+        "ae_ratio": 0.723,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_393",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band: 250,000 - 499,999",
+        "Attained_Age <= 49.5",
+        "Issue_Age > 27.5",
+        "Sex is Male",
+        "Preferred Class is U"
+      ],
+      "statistics": {
+        "exposure": 11285,
+        "actual_deaths": 12,
+        "expected_deaths": 16.453,
+        "ae_ratio": 0.729,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_138",
+      "rule_list": [
+        "14.5 < Duration <= 17.5",
+        "48.5 < Attained_Age <= 61.5",
+        "SOA Guar 20 yr guaranteed is No",
+        "Preferred Class is U",
+        "Face Amount Band: 250,000 - 499,999"
+      ],
+      "statistics": {
+        "exposure": 38431,
+        "actual_deaths": 97,
+        "expected_deaths": 76.78,
+        "ae_ratio": 1.263,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_195",
+      "rule_list": [
+        "1.5 < Duration <= 6.5",
+        "Attained_Age > 48.5",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "Preferred Class is 1",
+        "Sex is Female",
+        "Issue_Age > 54.5"
+      ],
+      "statistics": {
+        "exposure": 27595,
+        "actual_deaths": 25,
+        "expected_deaths": 33.92,
+        "ae_ratio": 0.737,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_418",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band > 250,000 - 499,999",
+        "Attained_Age > 59.5",
+        "Sex is Female",
+        "SOA Post WLT is Yes",
+        "Preferred Class is NOT 1"
+      ],
+      "statistics": {
+        "exposure": 12039,
+        "actual_deaths": 37,
+        "expected_deaths": 50.162,
+        "ae_ratio": 0.738,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_422",
+      "rule_list": [
+        "17.5 < Duration <= 18.5",
+        "Face Amount Band > 250,000 - 499,999",
+        "Attained_Age > 51.5",
+        "Sex is Female",
+        "SOA Post WLT is Yes",
+        "Preferred Class is 1",
+        "Issue_Age > 39.5"
+      ],
+      "statistics": {
+        "exposure": 8962,
+        "actual_deaths": 26,
+        "expected_deaths": 20.756,
+        "ae_ratio": 1.253,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_445",
+      "rule_list": [
+        "Duration > 21.5",
+        "Face Amount Band > 1,000,000 - 2,499,999",
+        "51.5 < Attained_Age <= 54.5",
+        "Sex is Male"
+      ],
+      "statistics": {
+        "exposure": 1703,
+        "actual_deaths": 2,
+        "expected_deaths": 3.517,
+        "ae_ratio": 0.569,
+        "credibility": 0.584
+      }
+    },
+    {
+      "segment_id": "SPOT_117",
+      "rule_list": [
+        "Duration <= 2.5",
+        "48.5 < Attained_Age <= 61.5",
+        "SOA Guar 20 yr guaranteed is No",
+        "Preferred Class is NOT U",
+        "Face Amount Band > 500,000 - 999,999",
+        "SOA Antp N/A (Not Term) is Yes"
+      ],
+      "statistics": {
+        "exposure": 44264,
+        "actual_deaths": 19,
+        "expected_deaths": 25.372,
+        "ae_ratio": 0.749,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_271",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band <= 25,000 - 49,999",
+        "Attained_Age <= 44.5",
+        "Insurance Plan is Perm",
+        "Smoker Status is Unknown",
+        "Issue_Age > 17.5"
+      ],
+      "statistics": {
+        "exposure": 35357,
+        "actual_deaths": 60,
+        "expected_deaths": 79.634,
+        "ae_ratio": 0.753,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_225",
+      "rule_list": [
+        "6.5 < Duration <= 17.5",
+        "48.5 < Attained_Age <= 51.5",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "Face Amount Band: 1,000,000 - 2,499,999",
+        "Sex is Male"
+      ],
+      "statistics": {
+        "exposure": 66564,
+        "actual_deaths": 45,
+        "expected_deaths": 59.669,
+        "ae_ratio": 0.754,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_316",
+      "rule_list": [
+        "17.5 < Duration <= 24.5",
+        "Face Amount Band <= 10,000 - 24,999",
+        "Attained_Age > 49.5",
+        "Preferred Class is NOT U",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "Preferred Class is 2"
+      ],
+      "statistics": {
+        "exposure": 16249,
+        "actual_deaths": 183,
+        "expected_deaths": 238.281,
+        "ae_ratio": 0.768,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_347",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band <= 100,000 - 249,999",
+        "49.5 < Attained_Age <= 56.5",
+        "Preferred Class is U",
+        "SOA Post NA is Yes",
+        "Insurance Plan is ULSG",
+        "Sex is Female"
+      ],
+      "statistics": {
+        "exposure": 5701,
+        "actual_deaths": 11,
+        "expected_deaths": 14.296,
+        "ae_ratio": 0.769,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_040",
+      "rule_list": [
+        "Duration <= 17.5",
+        "Attained_Age <= 48.5",
+        "Face Amount Band <= 25,000 - 49,999",
+        "Insurance Plan is Perm",
+        "0.5 < Issue_Age <= 12.5",
+        "Smoker Status is Known",
+        "Sex is Male"
+      ],
+      "statistics": {
+        "exposure": 113110,
+        "actual_deaths": 31,
+        "expected_deaths": 40.155,
+        "ae_ratio": 0.772,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_042",
+      "rule_list": [
+        "Duration <= 17.5",
+        "Attained_Age <= 48.5",
+        "Face Amount Band <= 25,000 - 49,999",
+        "Insurance Plan is Perm",
+        "Issue_Age > 12.5",
+        "Smoker Status is Known",
+        "Preferred Class is NOT U"
+      ],
+      "statistics": {
+        "exposure": 120600,
+        "actual_deaths": 147,
+        "expected_deaths": 119.759,
+        "ae_ratio": 1.227,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_081",
+      "rule_list": [
+        "12.5 < Duration <= 17.5",
+        "Attained_Age <= 40.5",
+        "Face Amount Band > 50,000 - 99,999",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "SOA Antp 20 yr anticipated is No",
+        "Issue_Age <= 24.5"
+      ],
+      "statistics": {
+        "exposure": 11218,
+        "actual_deaths": 17,
+        "expected_deaths": 13.873,
+        "ae_ratio": 1.225,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_222",
+      "rule_list": [
+        "6.5 < Duration <= 17.5",
+        "Attained_Age > 48.5",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "Face Amount Band > 1,000,000 - 2,499,999",
+        "Sex is Female",
+        "Preferred Class is 1",
+        "Issue_Age > 42.5"
+      ],
+      "statistics": {
+        "exposure": 18523,
+        "actual_deaths": 17,
+        "expected_deaths": 21.936,
+        "ae_ratio": 0.775,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_033",
+      "rule_list": [
+        "Duration <= 12.5",
+        "Attained_Age <= 48.5",
+        "Face Amount Band: 25,000 - 49,999",
+        "Insurance Plan is Perm",
+        "Issue_Age > 0.5",
+        "Smoker Status is Unknown"
+      ],
+      "statistics": {
+        "exposure": 361692,
+        "actual_deaths": 125,
+        "expected_deaths": 102.407,
+        "ae_ratio": 1.221,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_276",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band <= 25,000 - 49,999",
+        "42.5 < Attained_Age <= 49.5",
+        "Insurance Plan is Perm",
+        "Smoker Status is Known",
+        "Preferred Class is NOT U"
+      ],
+      "statistics": {
+        "exposure": 12739,
+        "actual_deaths": 26,
+        "expected_deaths": 33.25,
+        "ae_ratio": 0.782,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_139",
+      "rule_list": [
+        "14.5 < Duration <= 17.5",
+        "48.5 < Attained_Age <= 61.5",
+        "SOA Guar 20 yr guaranteed is No",
+        "Preferred Class is U",
+        "Face Amount Band > 500,000 - 999,999"
+      ],
+      "statistics": {
+        "exposure": 35770,
+        "actual_deaths": 48,
+        "expected_deaths": 60.915,
+        "ae_ratio": 0.788,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_106",
+      "rule_list": [
+        "3.5 < Duration <= 17.5",
+        "43.5 < Attained_Age <= 48.5",
+        "Face Amount Band > 2,500,000 - 4,999,999",
+        "SOA Guar 20 yr guaranteed is Yes"
+      ],
+      "statistics": {
+        "exposure": 16938,
+        "actual_deaths": 8,
+        "expected_deaths": 10.128,
+        "ae_ratio": 0.79,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_132",
+      "rule_list": [
+        "16.5 < Duration <= 17.5",
+        "48.5 < Attained_Age <= 61.5",
+        "SOA Guar 20 yr guaranteed is No",
+        "Preferred Class is U",
+        "Face Amount Band <= 100,000 - 249,999",
+        "Insurance Plan is Perm"
+      ],
+      "statistics": {
+        "exposure": 33472,
+        "actual_deaths": 178,
+        "expected_deaths": 147.095,
+        "ae_ratio": 1.21,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_166",
+      "rule_list": [
+        "Duration <= 3.5",
+        "Attained_Age > 61.5",
+        "SOA Guar 20 yr guaranteed is No",
+        "Face Amount Band > 250,000 - 499,999",
+        "Sex is Male",
+        "Issue_Age <= 61.5"
+      ],
+      "statistics": {
+        "exposure": 13309,
+        "actual_deaths": 33,
+        "expected_deaths": 27.307,
+        "ae_ratio": 1.208,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_325",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band <= 100,000 - 249,999",
+        "Attained_Age > 49.5",
+        "Preferred Class is U",
+        "SOA Post NA is No",
+        "SOA Post ULT is No",
+        "Issue_Age <= 25.5",
+        "Sex is Female"
+      ],
+      "statistics": {
+        "exposure": 7249,
+        "actual_deaths": 31,
+        "expected_deaths": 25.659,
+        "ae_ratio": 1.208,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_176",
+      "rule_list": [
+        "Duration <= 1.5",
+        "48.5 < Attained_Age <= 58.5",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "Face Amount Band <= 500,000 - 999,999",
+        "Sex is Female"
+      ],
+      "statistics": {
+        "exposure": 39921,
+        "actual_deaths": 19,
+        "expected_deaths": 23.559,
+        "ae_ratio": 0.806,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_309",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band <= 100,000 - 249,999",
+        "Attained_Age > 49.5",
+        "Preferred Class is NOT U",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "Preferred Class is NOT 2",
+        "Issue_Age <= 43.5",
+        "Sex is Female"
+      ],
+      "statistics": {
+        "exposure": 40900,
+        "actual_deaths": 69,
+        "expected_deaths": 84.836,
+        "ae_ratio": 0.813,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_247",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band <= 100,000 - 249,999",
+        "Attained_Age <= 49.5",
+        "Insurance Plan is NOT Perm",
+        "Insurance Plan is NOT UL",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "Issue_Age > 23.5",
+        "Preferred Class is NOT 2"
+      ],
+      "statistics": {
+        "exposure": 30292,
+        "actual_deaths": 56,
+        "expected_deaths": 47.342,
+        "ae_ratio": 1.183,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_080",
+      "rule_list": [
+        "Duration <= 12.5",
+        "Attained_Age <= 40.5",
+        "Face Amount Band > 50,000 - 99,999",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "SOA Antp 20 yr anticipated is No",
+        "Issue_Age <= 24.5"
+      ],
+      "statistics": {
+        "exposure": 37402,
+        "actual_deaths": 18,
+        "expected_deaths": 21.807,
+        "ae_ratio": 0.825,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_071",
+      "rule_list": [
+        "Duration <= 17.5",
+        "Attained_Age <= 48.5",
+        "Face Amount Band: 100,000 - 249,999",
+        "SOA Guar 20 yr guaranteed is No",
+        "SOA Post ULT is Yes",
+        "Preferred Class is NOT 1"
+      ],
+      "statistics": {
+        "exposure": 182383,
+        "actual_deaths": 147,
+        "expected_deaths": 126.382,
+        "ae_ratio": 1.163,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_206",
+      "rule_list": [
+        "6.5 < Duration <= 17.5",
+        "48.5 < Attained_Age <= 57.5",
+        "SOA Guar 20 yr guaranteed is Yes",
+        "Face Amount Band <= 50,000 - 99,999",
+        "Preferred Class is 2"
+      ],
+      "statistics": {
+        "exposure": 27498,
+        "actual_deaths": 84,
+        "expected_deaths": 100.225,
+        "ae_ratio": 0.838,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_437",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band: 250,000 - 499,999",
+        "Attained_Age > 51.5",
+        "Sex is Male",
+        "Preferred Class is 1",
+        "Issue_Age > 32.5",
+        "SOA Post PLT is Yes"
+      ],
+      "statistics": {
+        "exposure": 8494,
+        "actual_deaths": 45,
+        "expected_deaths": 53.22,
+        "ae_ratio": 0.846,
+        "credibility": 1.0
+      }
+    },
+    {
+      "segment_id": "SPOT_420",
+      "rule_list": [
+        "Duration > 17.5",
+        "Face Amount Band > 250,000 - 499,999",
+        "Attained_Age > 51.5",
+        "Sex is Female",
+        "SOA Post WLT is Yes",
+        "Preferred Class is 1",
+        "Issue_Age <= 39.5"
+      ],
+      "statistics": {
+        "exposure": 23987,
+        "actual_deaths": 25,
+        "expected_deaths": 29.435,
+        "ae_ratio": 0.849,
+        "credibility": 1.0
+      }
+    }
+  ]
+}

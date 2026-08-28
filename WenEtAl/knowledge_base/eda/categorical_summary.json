@@ -1,0 +1,314 @@
+{
+  "Sex": {
+    "total": 45501036,
+    "n_unique": 2,
+    "most_common": {
+      "value": "M",
+      "percentage": 53.48
+    },
+    "distribution": {
+      "M": {
+        "count": 24333152,
+        "percentage": 53.48
+      },
+      "F": {
+        "count": 21167884,
+        "percentage": 46.52
+      }
+    }
+  },
+  "Smoker_Status": {
+    "total": 45501036,
+    "n_unique": 3,
+    "most_common": {
+      "value": "NS",
+      "percentage": 72.25
+    },
+    "distribution": {
+      "NS": {
+        "count": 32872436,
+        "percentage": 72.25
+      },
+      "S": {
+        "count": 8695643,
+        "percentage": 19.11
+      },
+      "U": {
+        "count": 3932957,
+        "percentage": 8.64
+      }
+    }
+  },
+  "Insurance_Plan": {
+    "total": 45501036,
+    "n_unique": 7,
+    "most_common": {
+      "value": "Term",
+      "percentage": 46.0
+    },
+    "distribution": {
+      "Term": {
+        "count": 20929192,
+        "percentage": 46.0
+      },
+      "Perm": {
+        "count": 7470281,
+        "percentage": 16.42
+      },
+      "UL": {
+        "count": 6075946,
+        "percentage": 13.35
+      },
+      "ULSG": {
+        "count": 4613219,
+        "percentage": 10.14
+      },
+      "VL": {
+        "count": 3120515,
+        "percentage": 6.86
+      },
+      "VLSG": {
+        "count": 2412344,
+        "percentage": 5.3
+      },
+      "Other": {
+        "count": 879539,
+        "percentage": 1.93
+      }
+    }
+  },
+  "Face_Amount_Band": {
+    "total": 45501036,
+    "n_unique": 11,
+    "most_common": {
+      "value": "05: 100,000 - 249,999",
+      "percentage": 22.24
+    },
+    "distribution": {
+      "05: 100,000 - 249,999": {
+        "count": 10118882,
+        "percentage": 22.24
+      },
+      "06: 250,000 - 499,999": {
+        "count": 7396842,
+        "percentage": 16.26
+      },
+      "04: 50,000 - 99,999": {
+        "count": 6460460,
+        "percentage": 14.2
+      },
+      "07: 500,000 - 999,999": {
+        "count": 5471458,
+        "percentage": 12.02
+      },
+      "03: 25,000 - 49,999": {
+        "count": 4619883,
+        "percentage": 10.15
+      },
+      "08: 1,000,000 - 2,499,999": {
+        "count": 3919912,
+        "percentage": 8.61
+      },
+      "02: 10,000 - 24,999": {
+        "count": 3030835,
+        "percentage": 6.66
+      },
+      "01: 0 - 9,999": {
+        "count": 2269246,
+        "percentage": 4.99
+      },
+      "09: 2,500,000 - 4,999,999": {
+        "count": 1204673,
+        "percentage": 2.65
+      },
+      "10: 5,000,000 - 9,999,999": {
+        "count": 676346,
+        "percentage": 1.49
+      },
+      "11: 10,000,000+": {
+        "count": 332499,
+        "percentage": 0.73
+      }
+    }
+  },
+  "Preferred_Class": {
+    "total": 45501036,
+    "n_unique": 10,
+    "most_common": {
+      "value": "NA",
+      "percentage": 32.12
+    },
+    "distribution": {
+      "NA": {
+        "count": 14615884,
+        "percentage": 32.12
+      },
+      "2.0": {
+        "count": 7417733,
+        "percentage": 16.3
+      },
+      "1.0": {
+        "count": 7172721,
+        "percentage": 15.76
+      },
+      "2": {
+        "count": 4015772,
+        "percentage": 8.83
+      },
+      "1": {
+        "count": 3792389,
+        "percentage": 8.33
+      },
+      "3.0": {
+        "count": 3538797,
+        "percentage": 7.78
+      },
+      "3": {
+        "count": 1969016,
+        "percentage": 4.33
+      },
+      "4.0": {
+        "count": 1285892,
+        "percentage": 2.83
+      },
+      "4": {
+        "count": 894371,
+        "percentage": 1.97
+      },
+      "U": {
+        "count": 798461,
+        "percentage": 1.75
+      }
+    }
+  },
+  "SOA_Post_Lvl_Ind": {
+    "total": 45501036,
+    "n_unique": 5,
+    "most_common": {
+      "value": "NA",
+      "percentage": 54.0
+    },
+    "distribution": {
+      "NA": {
+        "count": 24571844,
+        "percentage": 54.0
+      },
+      "WLT": {
+        "count": 13384712,
+        "percentage": 29.42
+      },
+      "ULT": {
+        "count": 3660732,
+        "percentage": 8.05
+      },
+      "PLT": {
+        "count": 3109964,
+        "percentage": 6.83
+      },
+      "NLT": {
+        "count": 773784,
+        "percentage": 1.7
+      }
+    }
+  },
+  "SOA_Antp_Lvl_TP": {
+    "total": 45501036,
+    "n_unique": 10,
+    "most_common": {
+      "value": "N/A (Not Term)",
+      "percentage": 54.0
+    },
+    "distribution": {
+      "N/A (Not Term)": {
+        "count": 24571844,
+        "percentage": 54.0
+      },
+      "20 yr anticipated": {
+        "count": 5190317,
+        "percentage": 11.41
+      },
+      "Unknown": {
+        "count": 3883107,
+        "percentage": 8.53
+      },
+      "10 yr anticipated": {
+        "count": 3774124,
+        "percentage": 8.29
+      },
+      "15 yr anticipated": {
+        "count": 3114665,
+        "percentage": 6.85
+      },
+      "30 yr anticipated": {
+        "count": 2527808,
+        "percentage": 5.56
+      },
+      " 5 yr anticipated": {
+        "count": 1034572,
+        "percentage": 2.27
+      },
+      "25 yr anticipated": {
+        "count": 853106,
+        "percentage": 1.87
+      },
+      "Not Level Term": {
+        "count": 551409,
+        "percentage": 1.21
+      },
+      "40 yr anticipated": {
+        "count": 84,
+        "percentage": 0.0
+      }
+    }
+  },
+  "SOA_Guar_Lvl_TP": {
+    "total": 45501036,
+    "n_unique": 10,
+    "most_common": {
+      "value": "N/A (Not Term)",
+      "percentage": 54.0
+    },
+    "distribution": {
+      "N/A (Not Term)": {
+        "count": 24571844,
+        "percentage": 54.0
+      },
+      "20 yr guaranteed": {
+        "count": 4762703,
+        "percentage": 10.47
+      },
+      "10 yr guaranteed": {
+        "count": 4500502,
+        "percentage": 9.89
+      },
+      "Unknown": {
+        "count": 3883107,
+        "percentage": 8.53
+      },
+      "15 yr guaranteed": {
+        "count": 3048389,
+        "percentage": 6.7
+      },
+      "30 yr guaranteed": {
+        "count": 2002577,
+        "percentage": 4.4
+      },
+      " 5 yr guaranteed": {
+        "count": 1550115,
+        "percentage": 3.41
+      },
+      "25 yr guaranteed": {
+        "count": 630306,
+        "percentage": 1.39
+      },
+      "Not Level Term": {
+        "count": 551409,
+        "percentage": 1.21
+      },
+      "40 yr guaranteed": {
+        "count": 84,
+        "percentage": 0.0
+      }
+    }
+  }
+}

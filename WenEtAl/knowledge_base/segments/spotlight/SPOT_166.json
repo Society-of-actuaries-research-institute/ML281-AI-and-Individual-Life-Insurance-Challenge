@@ -1,0 +1,29 @@
+{
+  "segment_id": "SPOT_166",
+  "rule_list": [
+    "Duration <= 3.5",
+    "Attained_Age > 61.5",
+    "SOA Guar 20 yr guaranteed is No",
+    "Face Amount Band > 250,000 - 499,999",
+    "Sex is Male",
+    "Issue_Age <= 61.5"
+  ],
+  "rule_text": "Duration <= 3.5 AND Attained_Age > 61.5 AND SOA Guar 20 yr guaranteed is No AND Face Amount Band > 250,000 - 499,999 AND Sex is Male AND Issue_Age <= 61.5",
+  "statistics": {
+    "exposure": 13309,
+    "actual_deaths": 33,
+    "expected_deaths": 27.307,
+    "ae_ratio": 1.208,
+    "credibility_score": 1.0,
+    "stability": {
+      "year_col": "Observation_Year",
+      "years_analyzed": 8,
+      "anomaly_years": 8,
+      "direction": "Over",
+      "direction_consistency": 0.508,
+      "persistence": 1.0,
+      "stability_score": 0.611,
+      "log_ae_sd": 0.493
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "Attained_Age": {
+    "count": 45501036,
+    "mean": 52.94,
+    "std": 17.64,
+    "min": 0,
+    "max": 120,
+    "percentiles": {
+      "1": 12.0,
+      "5": 24.0,
+      "10": 30.0,
+      "25": 41.0,
+      "50": 53.0,
+      "75": 65.0,
+      "90": 76.0,
+      "95": 83.0,
+      "99": 93.0
+    },
+    "interpretation": {
+      "low": "Below 41.0 is considered low",
+      "typical": "Between 41.0 and 65.0 is typical",
+      "high": "Above 65.0 is considered high",
+      "extreme": "Above 83.0 is in top 5%"
+    }
+  },
+  "Issue_Age": {
+    "count": 45501036,
+    "mean": 40.26,
+    "std": 16.75,
+    "min": 0,
+    "max": 100,
+    "percentiles": {
+      "1": 1.0,
+      "5": 11.0,
+      "10": 19.0,
+      "25": 29.0,
+      "50": 40.0,
+      "75": 52.0,
+      "90": 62.0,
+      "95": 68.0,
+      "99": 77.0
+    },
+    "interpretation": {
+      "low": "Below 29.0 is considered low",
+      "typical": "Between 29.0 and 52.0 is typical",
+      "high": "Above 52.0 is considered high",
+      "extreme": "Above 68.0 is in top 5%"
+    }
+  },
+  "Duration": {
+    "count": 45501036,
+    "mean": 13.68,
+    "std": 10.44,
+    "min": 1,
+    "max": 119,
+    "percentiles": {
+      "1": 1.0,
+      "5": 2.0,
+      "10": 3.0,
+      "25": 6.0,
+      "50": 12.0,
+      "75": 19.0,
+      "90": 27.0,
+      "95": 32.0,
+      "99": 51.0
+    },
+    "interpretation": {
+      "low": "Below 6.0 is considered low",
+      "typical": "Between 6.0 and 19.0 is typical",
+      "high": "Above 19.0 is considered high",
+      "extreme": "Above 32.0 is in top 5%"
+    }
+  }
+}

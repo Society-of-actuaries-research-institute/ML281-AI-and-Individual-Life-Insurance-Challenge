@@ -1,0 +1,504 @@
+{
+  "layer": "A",
+  "overall_rate": 0.009666,
+  "segments": [
+    {
+      "segment_id": "COV_005",
+      "rule_list": [
+        "Duration <= 12.5",
+        "Attained_Age <= 15.5",
+        "Smoker Status is Unknown"
+      ],
+      "rule_text": "Duration <= 12.5 AND Attained_Age <= 15.5 AND Smoker Status is Unknown",
+      "statistics": {
+        "exposure": 1197334,
+        "actual_deaths": 120,
+        "expected_deaths": 124.919,
+        "ae_ratio": 0.961
+      }
+    },
+    {
+      "segment_id": "COV_006",
+      "rule_list": [
+        "Duration <= 12.5",
+        "15.5 < Attained_Age <= 48.5",
+        "Smoker Status is Unknown"
+      ],
+      "rule_text": "Duration <= 12.5 AND 15.5 < Attained_Age <= 48.5 AND Smoker Status is Unknown",
+      "statistics": {
+        "exposure": 591567,
+        "actual_deaths": 441,
+        "expected_deaths": 406.167,
+        "ae_ratio": 1.086
+      }
+    },
+    {
+      "segment_id": "COV_008",
+      "rule_list": [
+        "12.5 < Duration <= 17.5",
+        "Attained_Age <= 48.5",
+        "Smoker Status is Unknown",
+        "Sex is Female"
+      ],
+      "rule_text": "12.5 < Duration <= 17.5 AND Attained_Age <= 48.5 AND Smoker Status is Unknown AND Sex is Female",
+      "statistics": {
+        "exposure": 295998,
+        "actual_deaths": 106,
+        "expected_deaths": 111.021,
+        "ae_ratio": 0.955
+      }
+    },
+    {
+      "segment_id": "COV_009",
+      "rule_list": [
+        "12.5 < Duration <= 17.5",
+        "Attained_Age <= 48.5",
+        "Smoker Status is Unknown",
+        "Sex is Male"
+      ],
+      "rule_text": "12.5 < Duration <= 17.5 AND Attained_Age <= 48.5 AND Smoker Status is Unknown AND Sex is Male",
+      "statistics": {
+        "exposure": 307330,
+        "actual_deaths": 294,
+        "expected_deaths": 261.447,
+        "ae_ratio": 1.125
+      }
+    },
+    {
+      "segment_id": "COV_012",
+      "rule_list": [
+        "Duration <= 17.5",
+        "Attained_Age <= 40.5",
+        "Smoker Status is Known",
+        "Insurance Plan is NOT ULSG"
+      ],
+      "rule_text": "Duration <= 17.5 AND Attained_Age <= 40.5 AND Smoker Status is Known AND Insurance Plan is NOT ULSG",
+      "statistics": {
+        "exposure": 7037990,
+        "actual_deaths": 2891,
+        "expected_deaths": 2921.947,
+        "ae_ratio": 0.989
+      }
+    },
+    {
+      "segment_id": "COV_013",
+      "rule_list": [
+        "Duration <= 17.5",
+        "Attained_Age <= 40.5",
+        "Smoker Status is Known",
+        "Insurance Plan is ULSG"
+      ],
+      "rule_text": "Duration <= 17.5 AND Attained_Age <= 40.5 AND Smoker Status is Known AND Insurance Plan is ULSG",
+      "statistics": {
+        "exposure": 482392,
+        "actual_deaths": 160,
+        "expected_deaths": 158.078,
+        "ae_ratio": 1.012
+      }
+    },
+    {
+      "segment_id": "COV_015",
+      "rule_list": [
+        "Duration <= 17.5",
+        "40.5 < Attained_Age <= 48.5",
+        "Smoker Status is Known",
+        "Insurance Plan is NOT Term"
+      ],
+      "rule_text": "Duration <= 17.5 AND 40.5 < Attained_Age <= 48.5 AND Smoker Status is Known AND Insurance Plan is NOT Term",
+      "statistics": {
+        "exposure": 1299699,
+        "actual_deaths": 1105,
+        "expected_deaths": 1100.002,
+        "ae_ratio": 1.005
+      }
+    },
+    {
+      "segment_id": "COV_016",
+      "rule_list": [
+        "Duration <= 17.5",
+        "40.5 < Attained_Age <= 48.5",
+        "Smoker Status is Known",
+        "Insurance Plan is Term"
+      ],
+      "rule_text": "Duration <= 17.5 AND 40.5 < Attained_Age <= 48.5 AND Smoker Status is Known AND Insurance Plan is Term",
+      "statistics": {
+        "exposure": 3916323,
+        "actual_deaths": 2527,
+        "expected_deaths": 2590.998,
+        "ae_ratio": 0.975
+      }
+    },
+    {
+      "segment_id": "COV_020",
+      "rule_list": [
+        "Duration <= 1.5",
+        "48.5 < Attained_Age <= 61.5"
+      ],
+      "rule_text": "Duration <= 1.5 AND 48.5 < Attained_Age <= 61.5",
+      "statistics": {
+        "exposure": 389426,
+        "actual_deaths": 335,
+        "expected_deaths": 339.234,
+        "ae_ratio": 0.988
+      }
+    },
+    {
+      "segment_id": "COV_021",
+      "rule_list": [
+        "1.5 < Duration <= 6.5",
+        "48.5 < Attained_Age <= 61.5"
+      ],
+      "rule_text": "1.5 < Duration <= 6.5 AND 48.5 < Attained_Age <= 61.5",
+      "statistics": {
+        "exposure": 1969387,
+        "actual_deaths": 3056,
+        "expected_deaths": 3094.447,
+        "ae_ratio": 0.988
+      }
+    },
+    {
+      "segment_id": "COV_023",
+      "rule_list": [
+        "Duration <= 2.5",
+        "Attained_Age > 61.5"
+      ],
+      "rule_text": "Duration <= 2.5 AND Attained_Age > 61.5",
+      "statistics": {
+        "exposure": 273882,
+        "actual_deaths": 1133,
+        "expected_deaths": 1108.856,
+        "ae_ratio": 1.022
+      }
+    },
+    {
+      "segment_id": "COV_024",
+      "rule_list": [
+        "2.5 < Duration <= 6.5",
+        "Attained_Age > 61.5"
+      ],
+      "rule_text": "2.5 < Duration <= 6.5 AND Attained_Age > 61.5",
+      "statistics": {
+        "exposure": 711457,
+        "actual_deaths": 4842,
+        "expected_deaths": 4865.158,
+        "ae_ratio": 0.995
+      }
+    },
+    {
+      "segment_id": "COV_027",
+      "rule_list": [
+        "6.5 < Duration <= 17.5",
+        "48.5 < Attained_Age <= 58.5",
+        "Insurance Plan is NOT Term"
+      ],
+      "rule_text": "6.5 < Duration <= 17.5 AND 48.5 < Attained_Age <= 58.5 AND Insurance Plan is NOT Term",
+      "statistics": {
+        "exposure": 991877,
+        "actual_deaths": 2378,
+        "expected_deaths": 2322.032,
+        "ae_ratio": 1.024
+      }
+    },
+    {
+      "segment_id": "COV_028",
+      "rule_list": [
+        "6.5 < Duration <= 17.5",
+        "48.5 < Attained_Age <= 58.5",
+        "Insurance Plan is Term"
+      ],
+      "rule_text": "6.5 < Duration <= 17.5 AND 48.5 < Attained_Age <= 58.5 AND Insurance Plan is Term",
+      "statistics": {
+        "exposure": 2851575,
+        "actual_deaths": 4645,
+        "expected_deaths": 4586.005,
+        "ae_ratio": 1.013
+      }
+    },
+    {
+      "segment_id": "COV_030",
+      "rule_list": [
+        "6.5 < Duration <= 17.5",
+        "Attained_Age > 58.5",
+        "Insurance Plan is NOT VLSG"
+      ],
+      "rule_text": "6.5 < Duration <= 17.5 AND Attained_Age > 58.5 AND Insurance Plan is NOT VLSG",
+      "statistics": {
+        "exposure": 3211974,
+        "actual_deaths": 33383,
+        "expected_deaths": 33537.27,
+        "ae_ratio": 0.995
+      }
+    },
+    {
+      "segment_id": "COV_031",
+      "rule_list": [
+        "6.5 < Duration <= 17.5",
+        "Attained_Age > 58.5",
+        "Insurance Plan is VLSG"
+      ],
+      "rule_text": "6.5 < Duration <= 17.5 AND Attained_Age > 58.5 AND Insurance Plan is VLSG",
+      "statistics": {
+        "exposure": 95383,
+        "actual_deaths": 877,
+        "expected_deaths": 868.922,
+        "ae_ratio": 1.009
+      }
+    },
+    {
+      "segment_id": "COV_036",
+      "rule_list": [
+        "Duration > 17.5",
+        "Insurance Plan is NOT Perm",
+        "Attained_Age <= 45.5",
+        "Insurance Plan is NOT UL"
+      ],
+      "rule_text": "Duration > 17.5 AND Insurance Plan is NOT Perm AND Attained_Age <= 45.5 AND Insurance Plan is NOT UL",
+      "statistics": {
+        "exposure": 535715,
+        "actual_deaths": 619,
+        "expected_deaths": 613.788,
+        "ae_ratio": 1.008
+      }
+    },
+    {
+      "segment_id": "COV_037",
+      "rule_list": [
+        "Duration > 17.5",
+        "Insurance Plan is NOT Perm",
+        "45.5 < Attained_Age <= 51.5",
+        "Insurance Plan is NOT UL"
+      ],
+      "rule_text": "Duration > 17.5 AND Insurance Plan is NOT Perm AND 45.5 < Attained_Age <= 51.5 AND Insurance Plan is NOT UL",
+      "statistics": {
+        "exposure": 576625,
+        "actual_deaths": 957,
+        "expected_deaths": 987.107,
+        "ae_ratio": 0.97
+      }
+    },
+    {
+      "segment_id": "COV_039",
+      "rule_list": [
+        "Duration > 17.5",
+        "Insurance Plan is NOT Perm",
+        "Attained_Age <= 44.5",
+        "Insurance Plan is UL"
+      ],
+      "rule_text": "Duration > 17.5 AND Insurance Plan is NOT Perm AND Attained_Age <= 44.5 AND Insurance Plan is UL",
+      "statistics": {
+        "exposure": 909499,
+        "actual_deaths": 1053,
+        "expected_deaths": 1093.053,
+        "ae_ratio": 0.963
+      }
+    },
+    {
+      "segment_id": "COV_040",
+      "rule_list": [
+        "Duration > 17.5",
+        "Insurance Plan is NOT Perm",
+        "44.5 < Attained_Age <= 51.5",
+        "Insurance Plan is UL"
+      ],
+      "rule_text": "Duration > 17.5 AND Insurance Plan is NOT Perm AND 44.5 < Attained_Age <= 51.5 AND Insurance Plan is UL",
+      "statistics": {
+        "exposure": 397469,
+        "actual_deaths": 882,
+        "expected_deaths": 864.756,
+        "ae_ratio": 1.02
+      }
+    },
+    {
+      "segment_id": "COV_043",
+      "rule_list": [
+        "Duration > 17.5",
+        "Insurance Plan is NOT Perm",
+        "51.5 < Attained_Age <= 72.5",
+        "Insurance Plan is NOT UL"
+      ],
+      "rule_text": "Duration > 17.5 AND Insurance Plan is NOT Perm AND 51.5 < Attained_Age <= 72.5 AND Insurance Plan is NOT UL",
+      "statistics": {
+        "exposure": 2227814,
+        "actual_deaths": 12909,
+        "expected_deaths": 12941.285,
+        "ae_ratio": 0.998
+      }
+    },
+    {
+      "segment_id": "COV_044",
+      "rule_list": [
+        "Duration > 17.5",
+        "Insurance Plan is NOT Perm",
+        "Attained_Age > 72.5",
+        "Insurance Plan is NOT UL"
+      ],
+      "rule_text": "Duration > 17.5 AND Insurance Plan is NOT Perm AND Attained_Age > 72.5 AND Insurance Plan is NOT UL",
+      "statistics": {
+        "exposure": 315174,
+        "actual_deaths": 13759,
+        "expected_deaths": 13513.472,
+        "ae_ratio": 1.018
+      }
+    },
+    {
+      "segment_id": "COV_046",
+      "rule_list": [
+        "Duration > 17.5",
+        "Insurance Plan is NOT Perm",
+        "Attained_Age > 51.5",
+        "Insurance Plan is UL",
+        "Smoker Status is Unknown"
+      ],
+      "rule_text": "Duration > 17.5 AND Insurance Plan is NOT Perm AND Attained_Age > 51.5 AND Insurance Plan is UL AND Smoker Status is Unknown",
+      "statistics": {
+        "exposure": 66517,
+        "actual_deaths": 2238,
+        "expected_deaths": 2369.321,
+        "ae_ratio": 0.945
+      }
+    },
+    {
+      "segment_id": "COV_047",
+      "rule_list": [
+        "Duration > 17.5",
+        "Insurance Plan is NOT Perm",
+        "Attained_Age > 51.5",
+        "Insurance Plan is UL",
+        "Smoker Status is Known"
+      ],
+      "rule_text": "Duration > 17.5 AND Insurance Plan is NOT Perm AND Attained_Age > 51.5 AND Insurance Plan is UL AND Smoker Status is Known",
+      "statistics": {
+        "exposure": 2088053,
+        "actual_deaths": 34740,
+        "expected_deaths": 34569.621,
+        "ae_ratio": 1.005
+      }
+    },
+    {
+      "segment_id": "COV_051",
+      "rule_list": [
+        "17.5 < Duration <= 25.5",
+        "Insurance Plan is Perm",
+        "Attained_Age <= 48.5",
+        "Smoker Status is Unknown"
+      ],
+      "rule_text": "17.5 < Duration <= 25.5 AND Insurance Plan is Perm AND Attained_Age <= 48.5 AND Smoker Status is Unknown",
+      "statistics": {
+        "exposure": 664828,
+        "actual_deaths": 661,
+        "expected_deaths": 687.286,
+        "ae_ratio": 0.962
+      }
+    },
+    {
+      "segment_id": "COV_052",
+      "rule_list": [
+        "Duration > 25.5",
+        "Insurance Plan is Perm",
+        "Attained_Age <= 48.5",
+        "Smoker Status is Unknown"
+      ],
+      "rule_text": "Duration > 25.5 AND Insurance Plan is Perm AND Attained_Age <= 48.5 AND Smoker Status is Unknown",
+      "statistics": {
+        "exposure": 1472643,
+        "actual_deaths": 2595,
+        "expected_deaths": 2645.91,
+        "ae_ratio": 0.981
+      }
+    },
+    {
+      "segment_id": "COV_054",
+      "rule_list": [
+        "Duration > 17.5",
+        "Insurance Plan is Perm",
+        "Attained_Age <= 48.5",
+        "Smoker Status is Known",
+        "Sex is Female"
+      ],
+      "rule_text": "Duration > 17.5 AND Insurance Plan is Perm AND Attained_Age <= 48.5 AND Smoker Status is Known AND Sex is Female",
+      "statistics": {
+        "exposure": 476740,
+        "actual_deaths": 470,
+        "expected_deaths": 462.507,
+        "ae_ratio": 1.016
+      }
+    },
+    {
+      "segment_id": "COV_055",
+      "rule_list": [
+        "Duration > 17.5",
+        "Insurance Plan is Perm",
+        "Attained_Age <= 48.5",
+        "Smoker Status is Known",
+        "Sex is Male"
+      ],
+      "rule_text": "Duration > 17.5 AND Insurance Plan is Perm AND Attained_Age <= 48.5 AND Smoker Status is Known AND Sex is Male",
+      "statistics": {
+        "exposure": 517194,
+        "actual_deaths": 916,
+        "expected_deaths": 922.881,
+        "ae_ratio": 0.993
+      }
+    },
+    {
+      "segment_id": "COV_058",
+      "rule_list": [
+        "17.5 < Duration <= 25.5",
+        "Insurance Plan is Perm",
+        "48.5 < Attained_Age <= 54.5"
+      ],
+      "rule_text": "17.5 < Duration <= 25.5 AND Insurance Plan is Perm AND 48.5 < Attained_Age <= 54.5",
+      "statistics": {
+        "exposure": 312852,
+        "actual_deaths": 817,
+        "expected_deaths": 851.639,
+        "ae_ratio": 0.959
+      }
+    },
+    {
+      "segment_id": "COV_059",
+      "rule_list": [
+        "17.5 < Duration <= 25.5",
+        "Insurance Plan is Perm",
+        "Attained_Age > 54.5"
+      ],
+      "rule_text": "17.5 < Duration <= 25.5 AND Insurance Plan is Perm AND Attained_Age > 54.5",
+      "statistics": {
+        "exposure": 1158179,
+        "actual_deaths": 28012,
+        "expected_deaths": 28199.02,
+        "ae_ratio": 0.993
+      }
+    },
+    {
+      "segment_id": "COV_061",
+      "rule_list": [
+        "25.5 < Duration <= 34.5",
+        "Insurance Plan is Perm",
+        "Attained_Age > 48.5"
+      ],
+      "rule_text": "25.5 < Duration <= 34.5 AND Insurance Plan is Perm AND Attained_Age > 48.5",
+      "statistics": {
+        "exposure": 2541822,
+        "actual_deaths": 59321,
+        "expected_deaths": 59753.203,
+        "ae_ratio": 0.993
+      }
+    },
+    {
+      "segment_id": "COV_062",
+      "rule_list": [
+        "Duration > 34.5",
+        "Insurance Plan is Perm",
+        "Attained_Age > 48.5"
+      ],
+      "rule_text": "Duration > 34.5 AND Insurance Plan is Perm AND Attained_Age > 48.5",
+      "statistics": {
+        "exposure": 6624250,
+        "actual_deaths": 231307,
+        "expected_deaths": 231449.544,
+        "ae_ratio": 0.999
+      }
+    }
+  ]
+}

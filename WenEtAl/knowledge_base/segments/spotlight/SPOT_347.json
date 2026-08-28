@@ -1,0 +1,30 @@
+{
+  "segment_id": "SPOT_347",
+  "rule_list": [
+    "Duration > 17.5",
+    "Face Amount Band <= 100,000 - 249,999",
+    "49.5 < Attained_Age <= 56.5",
+    "Preferred Class is U",
+    "SOA Post NA is Yes",
+    "Insurance Plan is ULSG",
+    "Sex is Female"
+  ],
+  "rule_text": "Duration > 17.5 AND Face Amount Band <= 100,000 - 249,999 AND 49.5 < Attained_Age <= 56.5 AND Preferred Class is U AND SOA Post NA is Yes AND Insurance Plan is ULSG AND Sex is Female",
+  "statistics": {
+    "exposure": 5701,
+    "actual_deaths": 11,
+    "expected_deaths": 14.296,
+    "ae_ratio": 0.769,
+    "credibility_score": 1.0,
+    "stability": {
+      "year_col": "Observation_Year",
+      "years_analyzed": 8,
+      "anomaly_years": 8,
+      "direction": "Under",
+      "direction_consistency": 0.435,
+      "persistence": 1.0,
+      "stability_score": 0.445,
+      "log_ae_sd": 0.81
+    }
+  }
+}
