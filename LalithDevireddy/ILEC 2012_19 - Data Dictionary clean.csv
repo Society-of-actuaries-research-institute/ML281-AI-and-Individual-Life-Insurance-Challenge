@@ -1,0 +1,85 @@
+Field,Type,Description
+Observation_Year,Numeric,Calendar Year of Observation (2012-2019)
+Age_Ind,String,"0 = Age Nearest Birthday
+1 = Age Last Birthday
+2 = Age Next birthday"
+Sex,String,"F = Female
+M = Male"
+Smoker_Status,String,"N = Nonsmoker
+S = Smoker
+U = Uni-smoke
+ * Set to Uni-smoke for Issue_Year < 1981"
+Insurance_Plan,String,"Perm = Whole Life
+Term  = Term Life
+UL = Universal Life
+ULSG = Universal Life with Secondary Guarantees
+VL = Variable Universal Life
+VLSG = Variable Universal Life with Secondary Guarantees
+Other = Unknown"
+Issue_Age,Numeric,Policyholder's original age at the time that the policy was first issued
+Duration,Numeric,
+Face_Amount_Band,String,"01: 0 - 9,999	
+02: 10,000 - 24,999	
+03: 25,000 - 49,999	
+04: 50,000 - 99,999	
+05: 100,000 - 249,999	
+06: 250,000 - 499,999	
+07: 500,000 - 999,999	
+08: 1,000,000 - 2,499,999	
+09: 2,500,000 - 4,999,999	
+10: 5,000,000 - 9,999,999	
+11: 10,000,000+	
+ * Observation Year < 2018: Face Amount is the sum of the base segment and all associated riders.
+ * Observation Year 2018+: Face Amount is assigned at the segment level."
+Issue_Year,Numeric,Year in which the policy was first issued
+Attained_Age,Numeric,Age of the policyholder as of Observation_Year
+SOA_Antp_Lvl_TP,String,"SOA Anticipated Level Term Period:
+  * 5 yr anticipated
+  * 10 yr anticipated
+  * 15 yr anticipated
+  * 20 yr anticipated
+  * 25 yr anticipated
+  * 30 yr anticipated
+  * 40 yr anticipated
+  * N/A (Not Term)
+  * Not Level Term
+  * Unknown"
+SOA_Guar_Lvl_TP,String,"SOA Guaranteed Level Term Period
+  * 5 yr guaranteed
+  * 10 yr guaranteed
+  * 15 yr guaranteed
+  * 20 yr guaranteed
+  * 25 yr guaranteed
+  * 30 yr guaranteed
+  * 40 yr guaranteed
+  * N/A (Not Term)
+  * Not Level Term
+  * Unknown"
+SOA_Post_Lvl_Ind,String,"SOA Post level term indicator:
+  * N/A (Not Term)
+  * NLT (Not Level Term)
+  * PLT (Post Level Term)
+  * ULT (Unknown Level Term Period)
+  * WLT (Within Level Term Period)"
+Slct_Ult_Ind,String,"S = Select
+U = Ultimate"
+Preferred_Indicator,String,"0 = Not Preferred
+1 = Preferred
+U = Unkown"
+Number_of_Pfd_Classes,String,"Nonsmoker: 2, 3, 4, NA, or U
+Smoker:  2, NA, or U
+Unknown Smoker: NA or U"
+Preferred_Class,String,"1, 2, 3, 4, NA, U"
+Amount_Exposed,Decimal,
+Policies_Exposed,Decimal,
+Death_Claim_Amount,Decimal,
+Death_Count,Numeric,
+ExpDth_VBT2015_Cnt,Decimal,Expected Deaths - Count. Formula is: XPO_C * q
+ExpDth_VBT2015_Amt,Decimal,Expected Deaths - Amount. Formula is: XPO_C * q * FA
+ExpDth_VBT2015wMI_Cnt,Decimal,Expected Deaths - Count - w/MI. Formula is: XPO_C * q * ((1-MI)^(ObservationYear-2015))
+ExpDth_VBT2015wMI_Amt,Decimal,Expected Deaths - Amount - w/MI. Formula is: XPO_C * q * ((1-MI)^(ObservationYear-2015)) * FA
+Cen2MomP1wMI_Amt,Decimal,2nd Central Moment - Amount - w/MI - Part 1. Formula is: XPO_C * (q * ((1-MI)^(ObservationYear-2015))) * (FA^2)
+Cen2MomP2wMI_Amt,Decimal,2nd Central Moment - Amount - w/MI - Part 2. Formula is: XPO_C * ((q * ((1-MI)^(ObservationYear-2015)))^2) * (FA^2)
+Cen3MomP1wMI_Amt,Decimal,3rd Central Moment - Amount - w/MI - Part 1. Formula is: XPO_C * (q * ((1-MI)^(ObservationYear-2015))) * (FA^3)
+Cen3MomP2wMI_Amt,Decimal,3rd Central Moment - Amount - w/MI - Part 2. Formula is: XPO_C * ((q * ((1-MI)^(ObservationYear-2015)))^2) * (FA^3)
+Cen3MomP3wMI_Amt,Decimal,3rd Central Moment - Amount - w/MI - Part 3. Formula is: XPO_C * ((q * ((1-MI)^(ObservationYear-2015)))^3) * (FA^3)
