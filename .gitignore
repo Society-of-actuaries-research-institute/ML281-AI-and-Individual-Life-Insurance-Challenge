@@ -1,0 +1,9 @@
+# files
+.claude/settings.local.json
+files/dataset/*
+files/partition/*
+*.ipynb_checkpoints
+
+# include below even though they are excluded above
+!.gitkeep
+!files/dataset/mortality_grouped.parquet

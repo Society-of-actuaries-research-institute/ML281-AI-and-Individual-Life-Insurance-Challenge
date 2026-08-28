@@ -1,0 +1,152 @@
+#  __     ______ _____ _ ____  
+#  \ \   / / __ )_   _/ | ___| 
+#   \ \ / /|  _ \ | | | |___ \ 
+#    \ V / | |_) || | | |___) |
+#     \_/  |____/ |_| |_|____/ 
+                             
+vbt15:
+  rate: vbt15
+  description: vbt15 table
+  notes:
+    effective_dt: 06/30/2015
+  keys:
+    - issue_age
+    - duration
+    - sex
+    - smoker_status
+  type: 
+    soa:
+      table_list: [3224, 3234, 3274, 3252, 3262, 3273]
+      extra_dims: 
+        sex: ["F", "M"]
+        smoker_status: ["NS", "S", "U"]
+      juv_list: [3274, 3274, 3274, 3273, 3273, 3273]
+      extend: True
+  mi_table:
+    filename: mi.csv
+    years: 0
+vbt15_ult:
+  rate: vbt15_ult
+  description: vbt15_ult
+  notes:
+    effective_dt: 06/30/2015
+  keys:
+    # rate
+    - attained_age
+    - sex
+    - smoker_status
+  type:
+    csv: 
+      filename: vbt15_ult_anb.csv
+vbt15_rr50:
+  rate: vbt15_rr50
+  description: vbt15 table relative risk 50
+  keys:
+    - issue_age
+    - smoker_status
+    - sex
+    - duration
+  type: 
+    soa:
+      table_list: [3219, 3233, 3247, 3261]
+      extra_dims: 
+        sex: ["F", "M"]
+        smoker_status: ["NS", "S"]
+      juv_list: [3274, 3274, 3273, 3273]
+      extend: True
+vbt15_rr60:
+  rate: vbt15_rr60
+  description: vbt15 table relative risk 60
+  keys:
+    - issue_age
+    - smoker_status
+    - sex
+    - duration
+  type: 
+    soa:
+      table_list: [3220, 3233, 3248, 3261]
+      extra_dims: 
+        sex: ["F", "M"]
+        smoker_status: ["NS", "S"]
+      juv_list: [3274, 3274, 3273, 3273]
+      extend: True
+vbt15_rr70:
+  rate: vbt15_rr70
+  description: vbt15 table relative risk 70
+  keys:
+    - issue_age
+    - smoker_status
+    - sex
+    - duration
+  type: 
+    soa:
+      table_list: [3221, 3233, 3249, 3261]
+      extra_dims: 
+        sex: ["F", "M"]
+        smoker_status: ["NS", "S"]
+      juv_list: [3274, 3274, 3273, 3273]
+      extend: True
+vbt15_rr80:
+  rate: vbt15_rr80
+  description: vbt15 table relative risk 80
+  keys:
+    - issue_age
+    - smoker_status
+    - sex
+    - duration
+  type: 
+    soa:
+      table_list: [3222, 3234, 3250, 3262]
+      extra_dims: 
+        sex: ["F", "M"]
+        smoker_status: ["NS", "S"]
+      juv_list: [3274, 3274, 3273, 3273]
+      extend: True
+vbt15_rr90:
+  rate: vbt15_rr90
+  description: vbt15 table relative risk 90
+  keys:
+    - issue_age
+    - smoker_status
+    - sex
+    - duration
+  type: 
+    soa:
+      table_list: [3223, 3234, 3251, 3262]
+      extra_dims: 
+        sex: ["F", "M"]
+        smoker_status: ["NS", "S"]
+      juv_list: [3274, 3274, 3273, 3273]
+      extend: True
+vbt15_rr110:
+  rate: vbt15_rr110
+  description: vbt15 table relative risk 110
+  keys:
+    - issue_age
+    - smoker_status
+    - sex
+    - duration
+  type: 
+    soa:
+      table_list: [3225, 3235, 3253, 3263]
+      extra_dims: 
+        sex: ["F", "M"]
+        smoker_status: ["NS", "S"]
+      juv_list: [3274, 3274, 3273, 3273]
+      extend: True
+vbt15_rr125:
+  rate: vbt15_rr125
+  description: vbt15 table relative risk 125
+  keys:
+    - issue_age
+    - smoker_status
+    - sex
+    - duration
+  type: 
+    soa:
+      table_list: [3226, 3235, 3254, 3263]
+      extra_dims: 
+        sex: ["F", "M"]
+        smoker_status: ["NS", "S"]
+      juv_list: [3274, 3274, 3273, 3273]
+      extend: True

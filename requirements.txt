@@ -1,0 +1,15 @@
+morai[neural]==0.3.3
+
+# development tools
+black>=25.1.0
+isort>=6.0.1
+jupyterlab-code-formatter>=3.0.2
+jupyter-resource-usage>=1.1.1
+pytest>=8.3.5
+pytest-cov>=6.0.0
+ruff>=0.11.0
+
+# pinned for reproducibility
+numpy==2.4.6
+polars==1.41.2
+torch==2.9.1
