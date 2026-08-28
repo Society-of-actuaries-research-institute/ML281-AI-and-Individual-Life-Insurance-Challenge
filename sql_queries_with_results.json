@@ -1,0 +1,71 @@
+[
+    {
+        "json_request_location": "response_2026-02-01T013218.json",
+        "overview": "Temporal Analysis of Mortality Improvement in Universal Life (UL) vs. ULSG",
+        "hypothesis": "The report notes in Section 4 that UL mortality remains elevated compared to ULSG. I suspect that over the observation years, the gap between UL and ULSG A/E ratios will widen. This is likely due to the 'modernization' of the ULSG market and potential anti-selection or 'wear-off' of secondary guarantees on older UL policies issued in the 80s and 90s.",
+        "dimensions": "Observation_Year, Insurance_Plan (filtered to UL and ULSG), Death_Claim_Amount, ExpDth_VBT2015_Amt",
+        "filters": "Insurance_Plan in ('UL', 'ULSG') to isolate the specific universal life product comparison mentioned in Figure 4.2.",
+        "group_column_list": [
+            "Observation_Year",
+            "Insurance_Plan"
+        ],
+        "sql_desc": "This query investigates the temporal trend of mortality ratios for Universal Life (UL) and Universal Life with Secondary Guarantees (ULSG) from 2012 to 2019. It calculates the Actual-to-Expected (A/E) ratio by dividing the sum of Death_Claim_Amount by the sum of ExpDth_VBT2015_Amt (based on the VBT 2015 standard). By grouping by Observation_Year and Insurance_Plan, we can observe if the mortality gap between these two product types is widening over time as hypothesized due to secondary guarantee wear-off or anti-selection in older UL books.",
+        "sql_code": "SELECT Observation_Year, Insurance_Plan, SUM(Death_Claim_Amount) / SUM(ExpDth_VBT2015_Amt) AS AE_Ratio_Amount, SUM(Amount_Exposed) AS Total_Amount_Exposed FROM ILEC_Mortality_Table WHERE Insurance_Plan IN ('UL', 'ULSG') GROUP BY Observation_Year, Insurance_Plan ORDER BY Observation_Year ASC, Insurance_Plan ASC",
+        "csv_data_path": "agg_data_2026-02-01T013519.csv",
+        "graph_data_path": "graph_2026-02-01T013519.jpeg",
+        "calc_status": "Success",
+        "graph_status": "Success"
+    },
+    {
+        "json_request_location": "response_2026-02-01T013220.json",
+        "overview": "Gender-Specific Mortality Trends in High Face Amount 'Modern' Policies",
+        "hypothesis": "Figure 3.3 in the report shows very similar A/E curves for genders in the core data. However, Section 6.4 suggests that for older ages, females show a flatter trend across face amounts than males. I suspect that when focusing on the 'Modern' dataset across all ages over time, males will show a faster rate of mortality improvement (steeper decline in A/E) in high face amount bands compared to females.",
+        "dimensions": "Observation_Year, Sex, Face_Amount_Band, Death_Claim_Amount, ExpDth_VBT2015_Amt",
+        "filters": "Issue_Year >= 2000 and Face_Amount_Band in ('05','06','07','08','09','10','11') to simulate the 'Modern' data definition and focus on the socioeconomic trends hinted at in the paper.",
+        "group_column_list": [
+            "Observation_Year",
+            "Sex",
+            "Face_Amount_Band"
+        ],
+        "sql_desc": "This query calculates the Actual-to-Expected (A/E) ratio by amount to investigate mortality trends for males and females within high face amount bands of 'modern' policies (issued since 2000). It aggregates actual death claims and expected mortality amounts from the ILEC_Mortality_Table, grouped by observation year, sex, and face amount band to identify gender-specific improvement rates.",
+        "sql_code": "SELECT Observation_Year, Sex, Face_Amount_Band, SUM(Death_Claim_Amount) / NULLIF(SUM(ExpDth_VBT2015_Amt), 0) AS AE_Ratio_Amount FROM ILEC_Mortality_Table WHERE Issue_Year >= 2000 AND (Face_Amount_Band LIKE '05%' OR Face_Amount_Band LIKE '06%' OR Face_Amount_Band LIKE '07%' OR Face_Amount_Band LIKE '08%' OR Face_Amount_Band LIKE '09%' OR Face_Amount_Band LIKE '10%' OR Face_Amount_Band LIKE '11%') GROUP BY Observation_Year, Sex, Face_Amount_Band ORDER BY Observation_Year, Sex, Face_Amount_Band",
+        "csv_data_path": "agg_data_2026-02-01T013541.csv",
+        "graph_data_path": "graph_2026-02-01T013541.jpeg",
+        "calc_status": "Success",
+        "graph_status": "Success"
+    },
+    {
+        "json_request_location": "response_2026-02-01T013222.json",
+        "overview": "Impact of Smoker Status on Mortality Improvement Rates (2012-2019)",
+        "hypothesis": "Section 3.5 notes that the smoker mortality curve is flatter. I suspect that while non-smokers show steady improvement each observation year, the smoker A/E ratio will remain stagnant or potentially deteriorate in later years (2017-2019). This may be due to a 'population shift' where the remaining pool of insured smokers represents a higher-risk subset as overall smoking prevalence declines.",
+        "dimensions": "Observation_Year, Smoker_Status, Death_Claim_Amount, ExpDth_VBT2015_Amt",
+        "filters": "Smoker_Status in ('N', 'S') to exclude 'Uni-smoke' (U) business, which the paper notes is primarily pre-1981 and follows different dynamics.",
+        "group_column_list": [
+            "Observation_Year",
+            "Smoker_Status"
+        ],
+        "sql_desc": "This query calculates the Actual-to-Expected (A/E) mortality ratio by Observation Year and Smoker Status, filtered for Nonsmokers (N) and Smokers (S). The goal is to compare the mortality improvement trends between these two groups from 2012 to 2019 to test if smoker mortality improvement has stagnated or deteriorated relative to non-smokers.",
+        "sql_code": "SELECT Observation_Year, Smoker_Status, SUM(Death_Claim_Amount) / SUM(ExpDth_VBT2015_Amt) AS AE_Ratio_Amount FROM ILEC_Mortality_Table WHERE Smoker_Status IN ('N', 'S') GROUP BY Observation_Year, Smoker_Status ORDER BY Observation_Year, Smoker_Status",
+        "csv_data_path": "agg_data_2026-02-01T013605.csv",
+        "graph_data_path": "graph_2026-02-01T013605.jpeg",
+        "calc_status": "Success",
+        "graph_status": "Success"
+    },
+    {
+        "json_request_location": "response_2026-02-01T013225.json",
+        "overview": "Term Mortality Evolution: Post-Level vs. Within-Level Level Period",
+        "hypothesis": "The report notes that Term has the largest proportion of expected claims. I suspect that the 'Within-Level' (WLT) segment will show consistent mortality improvement across the observation years, while the 'Post-Level' (PLT) segment will show volatile and significantly higher A/E ratios that do not improve over time due to the extreme anti-selection associated with policyholders who remain inforce after a level premium period ends.",
+        "dimensions": "Observation_Year, SOA_Post_Lvl_Ind, Death_Claim_Amount, ExpDth_VBT2015_Amt",
+        "filters": "Insurance_Plan = 'Term' and SOA_Post_Lvl_Ind in ('WLT', 'PLT') to focus on the phenomena mentioned in Table 2.1 and Section 4.",
+        "group_column_list": [
+            "Observation_Year",
+            "SOA_Post_Lvl_Ind"
+        ],
+        "sql_desc": "The SQL query aggregates total death claim amounts and expected deaths for Term insurance plans, segmented by Observation Year and the Post Level Term indicator (WLT vs PLT). It calculates the A/E Ratio (AE_Ratio_Amount) to compare how actual mortality aligns with expectations over time for both 'Within Level Term' and 'Post Level Term' periods, allowing for the verification of the anti-selection hypothesis in the PLT segment.",
+        "sql_code": "SELECT Observation_Year, SOA_Post_Lvl_Ind, SUM(Death_Claim_Amount) AS Actual_Death_Amount, SUM(ExpDth_VBT2015_Amt) AS Expected_Death_Amount, SUM(Death_Claim_Amount) / NULLIF(SUM(ExpDth_VBT2015_Amt), 0) AS AE_Ratio_Amount FROM ILEC_Mortality_Table WHERE Insurance_Plan = \"Term\" AND SOA_Post_Lvl_Ind IN (\"WLT\", \"PLT\") GROUP BY Observation_Year, SOA_Post_Lvl_Ind ORDER BY Observation_Year, SOA_Post_Lvl_Ind",
+        "csv_data_path": "agg_data_2026-02-01T013628.csv",
+        "graph_data_path": "graph_2026-02-01T013628.jpeg",
+        "calc_status": "Success",
+        "graph_status": "Success"
+    }
+]

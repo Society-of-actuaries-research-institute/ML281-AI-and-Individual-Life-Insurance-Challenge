@@ -1,0 +1,6 @@
+Observation_Year,Age_Ind,Sex,Smoker_Status,Insurance_Plan,Issue_Age,Duration,Face_Amount_Band,Issue_Year,Attained_Age,SOA_Antp_Lvl_TP,SOA_Guar_Lvl_TP,SOA_Post_Lvl_Ind,Slct_Ult_Ind,Preferred_Indicator,Number_of_Pfd_Classes,Preferred_Class,Amount_Exposed,Policies_Exposed,Death_Claim_Amount,Death_Count,ExpDth_VBT2015_Cnt,ExpDth_VBT2015_Amt
+2012,ALB,M,NS,Term,34,17,"05: 100,000 - 249,999",1996,50,20 yr anticipated,20 yr guaranteed,WLT,S,1,2.0,2.0,2057949.25,15.261493682861328,0,0,0.02335008606314659,3148.662353515625
+2012,ALB,M,NS,Term,34,17,"05: 100,000 - 249,999",1996,50,20 yr anticipated,20 yr guaranteed,WLT,S,1,4.0,2.0,5342.39990234375,0.035615999251604,0,0,5.44924805581104e-05,8.173871994018553
+2012,ALB,M,NS,Term,34,17,"06: 250,000 - 499,999",1995,50, 5 yr anticipated, 5 yr guaranteed,PLT,S,1,2.0,1.0,8354205.0,30.044382095336918,0,0,0.04596790671348572,12781.93359375
+2012,ALB,M,NS,Term,34,17,"06: 250,000 - 499,999",1995,50,10 yr anticipated,10 yr guaranteed,PLT,S,1,2.0,2.0,1030355.3125,4.095629215240479,0,0,0.006266312208026648,1576.4437255859375
+2012,ALB,M,NS,Term,34,17,"06: 250,000 - 499,999",1995,50,15 yr anticipated,15 yr guaranteed,PLT,S,1,2.0,2.0,396174.75,1.5846990346908567,0,0,0.002424588892608881,606.1473388671875
